@@ -9,10 +9,10 @@
 ## 🗂️ 目录大纲
 
 ### 第一部分：基础语法
-- [01. Python 基础语法](./01-syntax/README.md) - 变量、数据类型、运算符
-- [02. 输入输出](./02-input-output/README.md) - print()、input() 函数的使用
-- [03. 注释和文档](./03-comments/README.md) - 单行注释、多行注释、文档字符串
-- [04. 代码规范](./04-style/README.md) - PEP 8 编码规范
+- [01. Python 基础语法](./01-variables-and-types/README.md) - 变量、数据类型
+- [02. Python 运算符](./02-operators/README.md) - 运算符
+- [03. 输入输出](./03-input-output/README.md) - print()、input() 函数的使用
+- [04. 注释和文档](./04-comments/README.md) - 单行注释、多行注释、文档字符串
 
 ### 第二部分：控制结构
 - [05. 条件语句](./05-conditionals/README.md) - if、elif、else 语句

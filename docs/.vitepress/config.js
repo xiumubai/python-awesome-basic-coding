@@ -54,10 +54,10 @@ export default defineConfig({
         {
           text: '4. 函数',
           items: [
-            { text: '🔧 函数基础', link: '/guide/13-functions/' },
+            { text: '🔧 函数基础', link: '/guide/13-basic-functions/' },
             { text: '📊 函数参数', link: '/guide/14-function-parameters/' },
             { text: '🔄 函数返回值', link: '/guide/15-function-returns/' },
-            { text: '🌐 作用域', link: '/guide/16-scope/' }
+            { text: '🌐 作用域', link: '/guide/16-function-scope/' }
           ]
         },
         {
@@ -403,14 +403,39 @@ export default defineConfig({
         {
           text: '🔧 函数基础',
           items: [
-            { text: '📖 模块概述', link: '/guide/13-functions/' },
-            { text: '🔧 定义函数', link: '/guide/13-functions/01_defining_functions' },
-            { text: '📞 调用函数', link: '/guide/13-functions/02_calling_functions' },
-            { text: '📊 函数参数', link: '/guide/13-functions/03_function_parameters' },
-            { text: '🔄 返回值', link: '/guide/13-functions/04_return_values' },
-            { text: '📚 文档字符串', link: '/guide/13-functions/05_docstrings' },
-            { text: '🌐 局部变量', link: '/guide/13-functions/06_local_variables' },
-            { text: '💪 综合练习', link: '/guide/13-functions/07_exercises' }
+            { text: '📖 模块概述', link: '/guide/13-basic-functions/' },
+            { text: '🔧 函数基础语法', link: '/guide/13-basic-functions/02_function_basics' },
+            { text: '📊 函数参数', link: '/guide/13-basic-functions/03_function_parameters' },
+            { text: '🔄 返回值', link: '/guide/13-basic-functions/04_return_values' },
+            { text: '🌐 局部和全局作用域', link: '/guide/13-basic-functions/05_local_global_scope' },
+            { text: '⭐ 默认参数', link: '/guide/13-basic-functions/06_default_parameters' },
+            { text: '📦 可变参数', link: '/guide/13-basic-functions/07_variable_arguments' },
+            { text: '📚 函数文档和注释', link: '/guide/13-basic-functions/08_function_documentation' },
+            { text: '💪 综合练习', link: '/guide/13-basic-functions/09_exercises' }
+          ]
+        }
+      ],
+      '/guide/13-basic-functions/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 字符串', link: '/guide/12-strings/' },
+            { text: '➡️ 下一模块: 函数参数', link: '/guide/14-function-parameters/' }
+          ]
+        },
+        {
+          text: '🔧 函数基础',
+          items: [
+            { text: '📖 模块概述', link: '/guide/13-basic-functions/' },
+            { text: '🔧 函数基础语法', link: '/guide/13-basic-functions/02_function_basics' },
+            { text: '📊 函数参数', link: '/guide/13-basic-functions/03_function_parameters' },
+            { text: '🔄 返回值', link: '/guide/13-basic-functions/04_return_values' },
+            { text: '🌐 局部和全局作用域', link: '/guide/13-basic-functions/05_local_global_scope' },
+            { text: '⭐ 默认参数', link: '/guide/13-basic-functions/06_default_parameters' },
+            { text: '📦 可变参数', link: '/guide/13-basic-functions/07_variable_arguments' },
+            { text: '📚 函数文档和注释', link: '/guide/13-basic-functions/08_function_documentation' },
+            { text: '💪 综合练习', link: '/guide/13-basic-functions/09_exercises' }
           ]
         }
       ],

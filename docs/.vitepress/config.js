@@ -377,15 +377,17 @@ export default defineConfig({
         {
           text: '🔤 字符串',
           items: [
-            { text: '📖 模块概述', link: '/guide/12-strings/' },
-            { text: '📝 创建字符串', link: '/guide/12-strings/01_creating_strings' },
-            { text: '🔍 访问字符', link: '/guide/12-strings/02_accessing_characters' },
-            { text: '🔧 字符串方法', link: '/guide/12-strings/03_string_methods' },
-            { text: '🎨 格式化字符串', link: '/guide/12-strings/04_string_formatting' },
-            { text: '✂️ 字符串切片', link: '/guide/12-strings/05_string_slicing' },
-            { text: '🔄 字符串遍历', link: '/guide/12-strings/06_string_iteration' },
-            { text: '🔍 正则表达式', link: '/guide/12-strings/07_regular_expressions' },
-            { text: '💪 综合练习', link: '/guide/12-strings/08_exercises' }
+            { text: '📖 模块概述', link: '/guide/12-strings/index' },
+            { text: '📝 字符串基础', link: '/guide/12-strings/02_string_basics' },
+            { text: '🔍 索引和切片', link: '/guide/12-strings/03_string_indexing' },
+            { text: '🔧 字符串方法', link: '/guide/12-strings/04_string_methods' },
+            { text: '🎨 字符串格式化', link: '/guide/12-strings/05_string_formatting' },
+            { text: '⚙️ 字符串操作', link: '/guide/12-strings/06_string_operations' },
+            { text: '🔍 查找和替换', link: '/guide/12-strings/07_string_searching' },
+            { text: '✅ 字符串验证', link: '/guide/12-strings/08_string_validation' },
+            { text: '🔤 编码和解码', link: '/guide/12-strings/09_string_encoding' },
+            { text: '📝 正则表达式', link: '/guide/12-strings/10_regular_expressions' },
+            { text: '💪 综合练习', link: '/guide/12-strings/11_exercises' }
           ]
         }
       ],

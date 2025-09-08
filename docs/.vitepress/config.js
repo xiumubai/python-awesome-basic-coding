@@ -354,13 +354,14 @@ export default defineConfig({
         {
           text: '🎯 集合',
           items: [
-            { text: '📖 模块概述', link: '/guide/11-sets/' },
-            { text: '📝 创建集合', link: '/guide/11-sets/01_creating_sets' },
-            { text: '✏️ 修改集合', link: '/guide/11-sets/02_modifying_sets' },
-            { text: '🔧 集合方法', link: '/guide/11-sets/03_set_methods' },
-            { text: '🔄 集合运算', link: '/guide/11-sets/04_set_operations' },
-            { text: '📊 集合推导式', link: '/guide/11-sets/05_set_comprehensions' },
-            { text: '💪 综合练习', link: '/guide/11-sets/06_exercises' }
+            { text: '📖 模块概述', link: '/guide/11-sets/index' },
+            { text: '📝 创建集合', link: '/guide/11-sets/02_creating_sets' },
+            { text: '🔧 集合操作', link: '/guide/11-sets/03_set_operations' },
+            { text: '🧮 集合数学运算', link: '/guide/11-sets/04_set_mathematics' },
+            { text: '⚙️ 集合方法', link: '/guide/11-sets/05_set_methods' },
+            { text: '📊 集合推导式', link: '/guide/11-sets/06_set_comprehensions' },
+            { text: '❄️ 不可变集合', link: '/guide/11-sets/07_frozenset' },
+            { text: '💪 综合练习', link: '/guide/11-sets/08_exercises' }
           ]
         }
       ],

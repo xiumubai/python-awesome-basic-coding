@@ -1,4 +1,4 @@
-# 11-sets - 集合学习模块
+# 集合学习模块
 
 ## 学习目标
 
@@ -36,9 +36,9 @@
 - **推荐系统**：基于集合运算的相似度计算
 - **图算法**：社交网络分析和路径查找
 
-## 文件说明
+## 学习内容
 
-### 01_creating_sets.py
+### 创建集合
 **学习内容**：集合的创建方法和基本特性
 - 使用花括号创建集合
 - 使用set()函数创建集合
@@ -53,12 +53,22 @@
 - 不同创建方式的适用场景
 - 集合与其他数据类型的转换
 
-**运行方式**：
-```bash
-python3 01_creating_sets.py
+**代码示例**：
+```python
+# 使用花括号创建集合
+fruits = {'apple', 'banana', 'orange'}
+print(fruits)  # {'banana', 'orange', 'apple'}
+
+# 使用set()函数创建集合
+numbers = set([1, 2, 3, 2, 1])
+print(numbers)  # {1, 2, 3}
+
+# 空集合的创建
+empty_set = set()
+print(empty_set)  # set()
 ```
 
-### 02_set_operations.py
+### 集合操作
 **学习内容**：集合的基本操作和方法
 - 添加元素：add()、update()
 - 删除元素：remove()、discard()、pop()、clear()
@@ -72,12 +82,20 @@ python3 01_creating_sets.py
 - pop()方法的随机性
 - 集合操作的时间复杂度
 
-**运行方式**：
-```bash
-python3 02_set_operations.py
+**代码示例**：
+```python
+# 添加元素
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  # {1, 2, 3, 4}
+
+# 删除元素
+my_set.remove(4)  # 如果元素不存在会抛出KeyError
+my_set.discard(5)  # 如果元素不存在不会抛出错误
+print(my_set)  # {1, 2, 3}
 ```
 
-### 03_set_mathematics.py
+### 集合数学运算
 **学习内容**：集合的数学运算
 - 并集运算：| 和 union()
 - 交集运算：& 和 intersection()
@@ -92,12 +110,25 @@ python3 02_set_operations.py
 - 就地运算的性能优势
 - 集合运算的数学性质
 
-**运行方式**：
-```bash
-python3 03_set_mathematics.py
+**代码示例**：
+```python
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+# 并集
+union_result = set1 | set2
+print(union_result)  # {1, 2, 3, 4, 5, 6}
+
+# 交集
+intersection_result = set1 & set2
+print(intersection_result)  # {3, 4}
+
+# 差集
+difference_result = set1 - set2
+print(difference_result)  # {1, 2}
 ```
 
-### 04_set_methods.py
+### 集合方法详解
 **学习内容**：集合内置方法详解
 - 添加和删除方法的详细用法
 - 运算方法的高级应用
@@ -111,12 +142,7 @@ python3 03_set_mathematics.py
 - 方法的副作用和纯函数特性
 - 最佳实践和使用建议
 
-**运行方式**：
-```bash
-python3 04_set_methods.py
-```
-
-### 05_set_comprehensions.py
+### 集合推导式
 **学习内容**：集合推导式的高级应用
 - 基础推导式语法
 - 条件过滤
@@ -130,12 +156,18 @@ python3 04_set_methods.py
 - 条件表达式的使用
 - 推导式vs传统循环的性能对比
 
-**运行方式**：
-```bash
-python3 05_set_comprehensions.py
+**代码示例**：
+```python
+# 基础集合推导式
+squares = {x**2 for x in range(10)}
+print(squares)  # {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
+
+# 带条件的集合推导式
+even_squares = {x**2 for x in range(10) if x % 2 == 0}
+print(even_squares)  # {0, 4, 16, 36, 64}
 ```
 
-### 06_frozenset.py
+### 不可变集合frozenset
 **学习内容**：不可变集合frozenset
 - frozenset的创建和特性
 - 与set的区别和联系
@@ -149,41 +181,30 @@ python3 05_set_comprehensions.py
 - frozenset的哈希特性
 - 在复杂数据结构中的应用
 
-**运行方式**：
-```bash
-python3 06_frozenset.py
-```
+**代码示例**：
+```python
+# 创建frozenset
+frozen_set = frozenset([1, 2, 3, 4])
+print(frozen_set)  # frozenset({1, 2, 3, 4})
 
-### 07_exercises.py
-**学习内容**：集合的综合练习和实际应用
-- 基础操作练习
-- 数学运算应用
-- 推导式高级练习
-- frozenset实际应用
-- 性能优化练习
-- 复杂问题解决
-- 终极挑战项目
-
-**重点知识点**：
-- 集合在实际问题中的应用
-- 性能优化技巧
-- 复杂数据结构的设计
-
-**运行方式**：
-```bash
-python3 07_exercises.py
+# frozenset作为字典键
+dict_with_frozenset_key = {
+    frozenset([1, 2]): 'value1',
+    frozenset([3, 4]): 'value2'
+}
+print(dict_with_frozenset_key)
 ```
 
 ## 学习建议
 
 ### 学习顺序
-1. **基础入门**：从01_creating_sets.py开始，理解集合的基本概念
-2. **操作掌握**：学习02_set_operations.py，掌握基本操作
-3. **数学运算**：通过03_set_mathematics.py理解集合运算
-4. **方法详解**：深入学习04_set_methods.py中的各种方法
-5. **高级技巧**：掌握05_set_comprehensions.py中的推导式
-6. **特殊应用**：学习06_frozenset.py中的不可变集合
-7. **综合练习**：通过07_exercises.py巩固所学知识
+1. **基础入门**：从创建集合开始，理解集合的基本概念
+2. **操作掌握**：学习集合操作，掌握基本操作
+3. **数学运算**：理解集合数学运算
+4. **方法详解**：深入学习各种方法
+5. **高级技巧**：掌握集合推导式
+6. **特殊应用**：学习不可变集合
+7. **综合练习**：通过练习巩固所学知识
 
 ### 学习方法
 1. **理论结合实践**：每学完一个概念，立即运行相关代码
@@ -202,17 +223,17 @@ python3 07_exercises.py
 ## 学习路径
 
 ### 初级阶段（1-2天）
-- 完成01-03的学习，掌握集合基础
+- 完成前3个主题的学习，掌握集合基础
 - 理解集合的创建、操作和数学运算
 - 能够解决简单的去重和查找问题
 
 ### 中级阶段（2-3天）
-- 完成04-05的学习，掌握高级方法和推导式
+- 完成方法详解和推导式的学习
 - 能够使用集合解决复杂的数据处理问题
 - 理解性能优化的重要性
 
 ### 高级阶段（2-3天）
-- 完成06-07的学习，掌握frozenset和综合应用
+- 完成frozenset和综合应用的学习
 - 能够设计基于集合的复杂数据结构
 - 在实际项目中熟练应用集合
 

@@ -1,5 +1,15 @@
 # 基本变量定义和赋值
 
+::: tip 📍 导航路径
+[🏠 首页](/guide/) > [📊 变量和数据类型](/guide/01-variables-and-types/) > 基本变量定义和赋值
+:::
+
+<div style="margin: 10px 0; padding: 10px; background: #f0f9ff; border-left: 4px solid #0ea5e9; border-radius: 4px;">
+  <strong>🧭 快速导航：</strong>
+  <a href="/guide/01-variables-and-types/" style="margin: 0 8px; color: #0ea5e9; text-decoration: none;">← 返回模块首页</a> |
+  <a href="/guide/01-variables-and-types/data-types.md" style="margin: 0 8px; color: #0ea5e9; text-decoration: none;">下一节：数据类型 →</a>
+</div>
+
 ## 学习目标
 
 1. 理解什么是变量

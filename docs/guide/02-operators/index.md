@@ -179,3 +179,21 @@ A: 建议记住常用的几个，复杂表达式使用括号明确优先级。
 - 表达式求值算法（中缀转后缀等）
 - 编译原理中的运算符处理
 - 不同编程语言的运算符差异
+
+---
+
+## 🧭 模块导航
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0; padding: 15px; background: #f6f8fa; border-radius: 8px; border-left: 4px solid #0366d6;">
+  <div style="text-align: left;">
+    <strong>⬅️ 上一模块</strong><br>
+    <a href="/guide/01-variables-and-types/" style="color: #0366d6; text-decoration: none; font-weight: bold;">📊 变量和数据类型</a>
+  </div>
+  <div style="text-align: center;">
+    <a href="/guide/" style="display: inline-block; padding: 8px 16px; background: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">🏠 返回教程首页</a>
+  </div>
+  <div style="text-align: right;">
+    <strong>➡️ 下一模块</strong><br>
+    <a href="/guide/03-input-output/" style="color: #0366d6; text-decoration: none; font-weight: bold;">💬 输入输出</a>
+  </div>
+</div>

@@ -123,6 +123,24 @@ A: 当需要将一种数据类型转换为另一种时，比如将字符串转�
 
 ---
 
+## 🧭 模块导航
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0; padding: 15px; background: #f6f8fa; border-radius: 8px; border-left: 4px solid #0366d6;">
+  <div style="text-align: left;">
+    <strong>⬅️ 上一模块</strong><br>
+    <span style="color: #666;">暂无</span>
+  </div>
+  <div style="text-align: center;">
+    <a href="/guide/" style="display: inline-block; padding: 8px 16px; background: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">🏠 返回教程首页</a>
+  </div>
+  <div style="text-align: right;">
+    <strong>➡️ 下一模块</strong><br>
+    <a href="/guide/02-operators/" style="color: #0366d6; text-decoration: none; font-weight: bold;">🔢 运算符</a>
+  </div>
+</div>
+
+---
+
 **开始你的Python学习之旅吧！** 🚀
 
 记住：编程是一门实践性很强的技能，多动手、多思考、多练习是成功的关键。

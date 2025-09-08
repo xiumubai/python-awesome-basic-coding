@@ -330,15 +330,15 @@ export default defineConfig({
         {
           text: '🗂️ 字典',
           items: [
-            { text: '📖 模块概述', link: '/guide/10-dictionaries/' },
-            { text: '📝 创建字典', link: '/guide/10-dictionaries/01_creating_dictionaries' },
-            { text: '🔍 访问元素', link: '/guide/10-dictionaries/02_accessing_elements' },
-            { text: '✏️ 修改字典', link: '/guide/10-dictionaries/03_modifying_dictionaries' },
-            { text: '🔧 字典方法', link: '/guide/10-dictionaries/04_dictionary_methods' },
-            { text: '🔄 字典遍历', link: '/guide/10-dictionaries/05_dictionary_iteration' },
-            { text: '📊 字典推导式', link: '/guide/10-dictionaries/06_dictionary_comprehensions' },
+            { text: '📖 模块概述', link: '/guide/10-dictionaries/index' },
+            { text: '📝 创建字典', link: '/guide/10-dictionaries/02_creating_dictionaries' },
+            { text: '🔍 访问值', link: '/guide/10-dictionaries/03_accessing_values' },
+            { text: '✏️ 修改字典', link: '/guide/10-dictionaries/04_modifying_dictionaries' },
+            { text: '🔧 字典方法', link: '/guide/10-dictionaries/05_dictionary_methods' },
+            { text: '🔄 字典遍历', link: '/guide/10-dictionaries/06_dictionary_iteration' },
             { text: '🏗️ 嵌套字典', link: '/guide/10-dictionaries/07_nested_dictionaries' },
-            { text: '💪 综合练习', link: '/guide/10-dictionaries/08_exercises' }
+            { text: '📊 字典推导式', link: '/guide/10-dictionaries/08_dictionary_comprehensions' },
+            { text: '💪 综合练习', link: '/guide/10-dictionaries/09_exercises' }
           ]
         }
       ],

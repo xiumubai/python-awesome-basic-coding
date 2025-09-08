@@ -403,4 +403,4 @@ python 02_data_types.py
 
 ## 下一步
 
-学习完数据类型后，继续学习：[动态类型特性演示](./dynamic-typing)
+学习完数据类型后，继续学习：[动态类型特性演示](./03_dynamic_typing)

@@ -65,12 +65,12 @@ export default defineConfig({
           text: '📝 变量和数据类型',
           items: [
             { text: '📖 模块概述', link: '/guide/01-variables-and-types/' },
-            { text: '🔤 基础变量', link: '/guide/01-variables-and-types/basic-variables' },
-            { text: '🏷️ 数据类型', link: '/guide/01-variables-and-types/data-types' },
-            { text: '🔄 动态类型', link: '/guide/01-variables-and-types/dynamic-typing' },
-            { text: '🔀 类型转换', link: '/guide/01-variables-and-types/type-conversion' },
-            { text: '📝 变量命名', link: '/guide/01-variables-and-types/variable-naming' },
-            { text: '💪 综合练习', link: '/guide/01-variables-and-types/exercises' }
+            { text: '🔤 基础变量', link: '/guide/01-variables-and-types/01_basic_variables' },
+            { text: '🏷️ 数据类型', link: '/guide/01-variables-and-types/02_data_types' },
+            { text: '🔄 动态类型', link: '/guide/01-variables-and-types/03_dynamic_typing' },
+            { text: '🔀 类型转换', link: '/guide/01-variables-and-types/04_type_conversion' },
+            { text: '📝 变量命名', link: '/guide/01-variables-and-types/05_variable_naming' },
+            { text: '💪 综合练习', link: '/guide/01-variables-and-types/06_exercises' }
           ]
         }
       ],
@@ -87,14 +87,60 @@ export default defineConfig({
           text: '🔢 运算符',
           items: [
             { text: '📖 模块概述', link: '/guide/02-operators/' },
-            { text: '➕ 算术运算符', link: '/guide/02-operators/arithmetic-operators' },
-            { text: '⚖️ 比较运算符', link: '/guide/02-operators/comparison-operators' },
-            { text: '🔗 逻辑运算符', link: '/guide/02-operators/logical-operators' },
-            { text: '📝 赋值运算符', link: '/guide/02-operators/assignment-operators' },
-            { text: '🔢 位运算符', link: '/guide/02-operators/bitwise-operators' },
-            { text: '🔍 成员运算符', link: '/guide/02-operators/membership-operators' },
-            { text: '📊 运算符优先级', link: '/guide/02-operators/operator-precedence' },
-            { text: '💪 综合练习', link: '/guide/02-operators/exercises' }
+            { text: '➕ 算术运算符', link: '/guide/02-operators/01_arithmetic_operators' },
+            { text: '⚖️ 比较运算符', link: '/guide/02-operators/02_comparison_operators' },
+            { text: '🔗 逻辑运算符', link: '/guide/02-operators/03_logical_operators' },
+            { text: '📝 赋值运算符', link: '/guide/02-operators/04_assignment_operators' },
+            { text: '🔢 位运算符', link: '/guide/02-operators/05_bitwise_operators' },
+            { text: '🔍 成员运算符', link: '/guide/02-operators/06_membership_operators' },
+            { text: '📊 运算符优先级', link: '/guide/02-operators/07_operator_precedence' },
+            { text: '💪 综合练习', link: '/guide/02-operators/08_exercises' }
+          ]
+        }
+      ],
+      '/guide/03-input-output/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 运算符', link: '/guide/02-operators/' },
+            { text: '➡️ 下一模块: 注释', link: '/guide/04-comments/' }
+          ]
+        },
+        {
+          text: '💬 输入输出',
+          items: [
+            { text: '📖 模块概述', link: '/guide/03-input-output/' },
+            { text: '⌨️ 基础输入', link: '/guide/03-input-output/01_basic_input' },
+            { text: '✅ 输入验证', link: '/guide/03-input-output/02_input_validation' },
+            { text: '📺 基础输出', link: '/guide/03-input-output/03_basic_output' },
+            { text: '🎨 格式化输出', link: '/guide/03-input-output/04_formatted_output' },
+            { text: '📁 文件输入', link: '/guide/03-input-output/05_file_input' },
+            { text: '💾 文件输出', link: '/guide/03-input-output/06_file_output' },
+            { text: '🚀 高级IO', link: '/guide/03-input-output/07_advanced_io' },
+            { text: '💪 综合练习', link: '/guide/03-input-output/08_exercises' }
+          ]
+        }
+      ],
+      '/guide/04-comments/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 输入输出', link: '/guide/03-input-output/' },
+            { text: '➡️ 下一模块: 条件语句', link: '/guide/05-conditions/' }
+          ]
+        },
+        {
+          text: '📋 注释',
+          items: [
+            { text: '📖 模块概述', link: '/guide/04-comments/' },
+            { text: '📝 单行注释', link: '/guide/04-comments/01_single_line_comments' },
+            { text: '📄 多行注释', link: '/guide/04-comments/02_multi_line_comments' },
+            { text: '📚 文档字符串', link: '/guide/04-comments/03_docstrings' },
+            { text: '📍 行内注释', link: '/guide/04-comments/04_inline_comments' },
+            { text: '✨ 注释最佳实践', link: '/guide/04-comments/05_comment_best_practices' },
+            { text: '💪 综合练习', link: '/guide/04-comments/06_exercises' }
           ]
         }
       ]

@@ -1,4 +1,4 @@
-# 08-lists - Python列表学习模块
+# Python列表学习模块
 
 ## 学习目标
 

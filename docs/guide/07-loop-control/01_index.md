@@ -1,4 +1,4 @@
-# 07-loop-control - 循环控制
+# 循环控制
 
 循环控制语句学习模块，深入学习Python中的循环控制语句，包括break、continue和else子句的使用。
 
@@ -36,11 +36,6 @@
 - 被break中断的循环不会执行else子句
 - 使用标志变量控制外层循环
 
-**运行方式**：
-```bash
-python 01_break_statement.py
-```
-
 ### 02_continue_statement.py
 **continue语句的使用**
 - continue语句的基本语法和作用
@@ -54,11 +49,6 @@ python 01_break_statement.py
 - continue不影响else子句的执行
 - 使用continue避免深层if-else嵌套
 
-**运行方式**：
-```bash
-python 02_continue_statement.py
-```
-
 ### 03_else_clause.py
 **循环的else子句**
 - for-else和while-else的语法
@@ -71,11 +61,6 @@ python 02_continue_statement.py
 - else子句只在循环正常结束时执行
 - 被break中断的循环不会执行else子句
 - else子句可以简化代码逻辑
-
-**运行方式**：
-```bash
-python 03_else_clause.py
-```
 
 ### 04_loop_control_tips.py
 **循环控制技巧和最佳实践**
@@ -91,11 +76,6 @@ python 03_else_clause.py
 - 循环内存优化和性能监控
 - 选择合适的循环类型和数据结构
 
-**运行方式**：
-```bash
-python 04_loop_control_tips.py
-```
-
 ### 05_exercises.py
 **综合练习**
 - 数字猜测游戏
@@ -110,11 +90,6 @@ python 04_loop_control_tips.py
 - 解决实际编程问题
 - 代码优化和错误处理
 - 用户交互和数据验证
-
-**运行方式**：
-```bash
-python 05_exercises.py
-```
 
 ## 学习建议
 

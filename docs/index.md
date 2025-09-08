@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /guide/01-variables-and-types/
+      link: /guide/
     - theme: alt
       text: 查看GitHub
       link: https://github.com/your-repo/python-awesome-basic-coding

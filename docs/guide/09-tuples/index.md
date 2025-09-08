@@ -1,4 +1,4 @@
-# 09-tuples - Python元组学习模块
+# Python元组学习模块
 
 ## 学习目标
 
@@ -19,7 +19,7 @@
 
 ## 文件说明
 
-### 01_creating_tuples.py
+### 02_creating_tuples.md
 **学习内容：** 元组的创建方法
 - 使用圆括号创建元组
 - 使用tuple()函数创建元组
@@ -32,12 +32,7 @@
 - 元组可以省略括号：`a, b, c = 1, 2, 3`
 - 元组的不可变性
 
-**运行方式：**
-```bash
-python 01_creating_tuples.py
-```
-
-### 02_accessing_elements.py
+### 03_accessing_elements.md
 **学习内容：** 元组元素的访问和操作
 - 索引访问（正向和负向）
 - 切片操作
@@ -51,12 +46,7 @@ python 01_creating_tuples.py
 - 使用`in`和`not in`检查元素
 - 多种遍历方式的选择
 
-**运行方式：**
-```bash
-python 02_accessing_elements.py
-```
-
-### 03_tuple_operations.py
+### 04_tuple_operations.md
 **学习内容：** 元组的操作和方法
 - 元组连接和重复
 - 元组比较操作
@@ -70,12 +60,7 @@ python 02_accessing_elements.py
 - 元组方法很少，主要是count()和index()
 - 类型转换的灵活运用
 
-**运行方式：**
-```bash
-python 03_tuple_operations.py
-```
-
-### 04_tuple_unpacking.py
+### 05_tuple_unpacking.md
 **学习内容：** 元组解包和多重赋值
 - 基本元组解包
 - 多重赋值技巧
@@ -90,12 +75,7 @@ python 03_tuple_operations.py
 - 嵌套解包的语法规则
 - 实际应用场景的掌握
 
-**运行方式：**
-```bash
-python 04_tuple_unpacking.py
-```
-
-### 05_tuple_vs_list.py
+### 06_tuple_vs_list.md
 **学习内容：** 元组与列表的比较
 - 可变性对比
 - 性能对比测试
@@ -110,12 +90,7 @@ python 04_tuple_unpacking.py
 - 元组可作为字典键，列表不行
 - 选择使用的判断标准
 
-**运行方式：**
-```bash
-python 05_tuple_vs_list.py
-```
-
-### 06_exercises.py
+### 07_exercises.md
 **学习内容：** 综合练习和实际应用
 - 基础操作练习
 - 元组解包练习
@@ -129,16 +104,11 @@ python 05_tuple_vs_list.py
 - 代码优化和最佳实践
 - 项目开发经验
 
-**运行方式：**
-```bash
-python 06_exercises.py
-```
-
 ## 学习建议
 
 ### 学习顺序
-1. **基础学习**：按照文件编号顺序学习，从01到06
-2. **理论结合实践**：每学完一个文件，立即运行代码观察结果
+1. **基础学习**：按照文档编号顺序学习，从02到07
+2. **理论结合实践**：每学完一个文档，立即运行对应的Python代码观察结果
 3. **对比学习**：重点关注元组与列表的区别
 4. **实践应用**：完成所有练习题，加深理解
 
@@ -154,7 +124,7 @@ python 06_exercises.py
 3. **使用场景**：学会判断何时使用元组，何时使用列表
 4. **性能优势**：了解元组的性能特点
 
-## 使用方法
+## 代码运行方式
 
 ### 环境要求
 - Python 3.6+
@@ -204,17 +174,17 @@ for file in *.py; do echo "=== Running $file ==="; python "$file"; echo; done
 ```
 开始学习
     ↓
-01_creating_tuples.py (元组创建)
+02_creating_tuples.md (元组创建)
     ↓
-02_accessing_elements.py (元素访问)
+03_accessing_elements.md (元素访问)
     ↓
-03_tuple_operations.py (元组操作)
+04_tuple_operations.md (元组操作)
     ↓
-04_tuple_unpacking.py (元组解包) ← 重点
+05_tuple_unpacking.md (元组解包) ← 重点
     ↓
-05_tuple_vs_list.py (对比分析) ← 重点
+06_tuple_vs_list.md (对比分析) ← 重点
     ↓
-06_exercises.py (综合练习)
+07_exercises.md (综合练习)
     ↓
 完成学习
 ```

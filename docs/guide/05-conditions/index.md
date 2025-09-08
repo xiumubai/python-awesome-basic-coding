@@ -30,7 +30,7 @@
 
 ## 文件说明
 
-### 01_basic_if_statements.py - 基础if语句
+### [基础if语句](./02_basic_if_statements.md)
 **学习内容：**
 - if语句的基本语法结构
 - 条件表达式的编写方法
@@ -44,12 +44,7 @@
 - 条件表达式：返回True或False的表达式
 - 实际应用：年龄判断、分数评级、权限检查等
 
-**运行方式：**
-```bash
-python 01_basic_if_statements.py
-```
-
-### 02_if_else_statements.py - if-else语句
+### [if-else语句](./03_if_else_statements.md)
 **学习内容：**
 - if-else语句的完整语法
 - 二选一逻辑的实现方法
@@ -63,12 +58,7 @@ python 01_basic_if_statements.py
 - 布尔值判断：True/False的直接使用
 - 容器判断：空列表、空字符串等的真假性
 
-**运行方式：**
-```bash
-python 02_if_else_statements.py
-```
-
-### 03_elif_statements.py - elif多分支语句
+### [elif多分支语句](./04_elif_statements.md)
 **学习内容：**
 - elif语句的语法和作用
 - 多分支条件判断的实现
@@ -82,12 +72,7 @@ python 02_if_else_statements.py
 - 条件顺序：从上到下依次判断，找到第一个为真的条件
 - 性能优化：elif比多个独立if语句更高效
 
-**运行方式：**
-```bash
-python 03_elif_statements.py
-```
-
-### 04_nested_conditions.py - 嵌套条件语句
+### [嵌套条件语句](./05_nested_conditions.md)
 **学习内容：**
 - 嵌套if语句的结构和语法
 - 多层条件判断的设计思路
@@ -101,12 +86,7 @@ python 03_elif_statements.py
 - 逻辑清晰：合理的嵌套层次和结构
 - 实际应用：学生成绩评定、用户权限验证等
 
-**运行方式：**
-```bash
-python 04_nested_conditions.py
-```
-
-### 05_logical_operators_in_conditions.py - 条件中的逻辑运算符
+### [条件中的逻辑运算符](./06_logical_operators_in_conditions.md)
 **学习内容：**
 - and运算符的使用和短路特性
 - or运算符的使用和短路特性
@@ -121,12 +101,7 @@ python 04_nested_conditions.py
 - 短路求值：提高程序执行效率的机制
 - 运算符优先级：not > and > or
 
-**运行方式：**
-```bash
-python 05_logical_operators_in_conditions.py
-```
-
-### 06_comparison_operators.py - 比较运算符详解
+### [比较运算符详解](./07_comparison_operators.md)
 **学习内容：**
 - 基本比较运算符的使用（==、!=、<、>、<=、>=）
 - 字符串比较的规则和方法
@@ -142,12 +117,7 @@ python 05_logical_operators_in_conditions.py
 - 身份比较：is检查对象身份，==检查值相等
 - 成员检查：in检查元素是否在容器中
 
-**运行方式：**
-```bash
-python 06_comparison_operators.py
-```
-
-### 07_conditional_expressions.py - 条件表达式（三元运算符）
+### [条件表达式（三元运算符）](./08_conditional_expressions.md)
 **学习内容：**
 - 条件表达式的语法和使用场景
 - 与传统if-else语句的对比
@@ -161,12 +131,7 @@ python 06_comparison_operators.py
 - 可读性考虑：复杂逻辑时应使用传统if语句
 - 实际应用：配置设置、数据处理、函数返回值等
 
-**运行方式：**
-```bash
-python 07_conditional_expressions.py
-```
-
-### 08_exercises.py - 综合练习
+### [综合练习](./09_exercises.md)
 **学习内容：**
 - 综合运用所有条件语句知识
 - 解决实际编程问题的方法
@@ -180,19 +145,14 @@ python 07_conditional_expressions.py
 - 代码优化：提高代码效率和可读性
 - 实战应用：登录系统、推荐算法、游戏逻辑等
 
-**运行方式：**
-```bash
-python 08_exercises.py
-```
-
 ## 学习建议
 
 ### 学习顺序
-1. **按顺序学习**：从01到08依次学习，每个文件都是前一个的基础
+1. **按顺序学习**：从基础if语句到综合练习依次学习
 2. **动手实践**：运行每个示例代码，观察输出结果
 3. **修改实验**：尝试修改代码中的条件和值，观察变化
-4. **独立练习**：完成每个文件末尾的练习题
-5. **综合应用**：学完所有基础内容后，重点练习08_exercises.py
+4. **独立练习**：完成每个章节的练习题
+5. **综合应用**：学完所有基础内容后，重点练习综合练习
 
 ### 使用方法
 1. **阅读代码**：仔细阅读每个文件的代码和注释
@@ -219,26 +179,26 @@ python 08_exercises.py
 
 ### 初学者路径（建议学习时间：3-5天）
 ```
-第1天：01_basic_if_statements.py + 02_if_else_statements.py
-第2天：03_elif_statements.py + 04_nested_conditions.py
-第3天：05_logical_operators_in_conditions.py + 06_comparison_operators.py
-第4天：07_conditional_expressions.py
-第5天：08_exercises.py（重点练习）
+第1天：基础if语句 + if-else语句
+第2天：elif多分支语句 + 嵌套条件语句
+第3天：条件中的逻辑运算符 + 比较运算符详解
+第4天：条件表达式（三元运算符）
+第5天：综合练习（重点练习）
 ```
 
 ### 进阶路径（已有基础）
 ```
-快速回顾：01-04文件（1小时）
-重点学习：05-07文件（2小时）
-综合练习：08_exercises.py（2-3小时）
+快速回顾：基础语法（1小时）
+重点学习：逻辑运算符和比较运算符（2小时）
+综合练习：实际应用场景练习（2-3小时）
 实际应用：结合自己的项目练习（持续）
 ```
 
 ### 复习路径
 ```
-理论复习：阅读README.md和代码注释
+理论复习：阅读文档和代码注释
 实践复习：重新运行所有示例代码
-测试理解：完成08_exercises.py中的所有练习
+测试理解：完成综合练习中的所有练习
 应用检验：编写新的条件判断程序
 ```
 

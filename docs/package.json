@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "build:github": "vitepress build --base /python-awesome-basic-coding/",
+    "deploy:github": "npm run build:github && gh-pages -d .vitepress/dist",
+    "serve": "vitepress serve",
+    "clean": "rm -rf .vitepress/dist"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

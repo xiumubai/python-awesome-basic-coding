@@ -3,8 +3,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Python基础编程学习',
   description: 'Python基础编程完整学习教程',
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/python-awesome-basic-coding/' : '/',
+  outDir: '../dist',
   ignoreDeadLinks: true,
+  cleanUrls: true,
   
   themeConfig: {
     logo: '/logo.svg',
@@ -19,14 +21,11 @@ export default defineConfig({
     sidebar: {
       '/guide/': [
         {
-          text: '📚 教程导航',
-          items: [
-            { text: '🏠 教程首页', link: '/guide/' },
-            { text: '📖 学习指南', link: '/guide/learning-guide' }
-          ]
+          text: '🏠 教程导航',
+          link: '/guide/',
         },
         {
-          text: '🔤 基础语法',
+          text: '1. 基础语法',
           items: [
             { text: '📝 变量和类型', link: '/guide/01-variables-and-types/' },
             { text: '🔢 运算符', link: '/guide/02-operators/' },
@@ -35,7 +34,7 @@ export default defineConfig({
           ]
         },
         {
-          text: '🔀 控制结构',
+          text: '2. 控制结构',
           items: [
             { text: '❓ 条件语句', link: '/guide/05-conditions/' },
             { text: '🔄 循环', link: '/guide/06-loops/' },
@@ -43,7 +42,7 @@ export default defineConfig({
           ]
         },
         {
-          text: '📊 数据结构',
+          text: '3. 数据结构',
           items: [
             { text: '📋 列表', link: '/guide/08-lists/' },
             { text: '📦 元组', link: '/guide/09-tuples/' },

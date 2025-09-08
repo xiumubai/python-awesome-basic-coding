@@ -1,0 +1,22 @@
+{
+  "name": "python-awesome-docs",
+  "version": "1.0.0",
+  "description": "Python基础编程学习文档网站",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "keywords": [
+    "python",
+    "tutorial",
+    "documentation",
+    "learning"
+  ],
+  "author": "Python Learning Team",
+  "license": "MIT"
+}

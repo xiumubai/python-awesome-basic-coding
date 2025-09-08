@@ -93,8 +93,42 @@
 
 记住：编程是一门实践性很强的技能，多写代码，多思考，你一定能够掌握 Python 编程！
 
+## 提示词使用方法
 ```txt
-// 提示词
-为`01-variables-and-types`学习模块创建完整的学习代码和教学教案，包括多个可运行的Python文件，每个文件对应一个知识点。
-更新README.md文件，添加对已创建的六个Python代码文件的详细说明和使用指南。
+"为 05-conditions 学习模块创建完整的学习代码和教学教案..."
+```
+
+## 模块更新列表
+
+``` markdown
+根据项目结构，以下模块需要按此流程更新：
+
+- 05-conditions
+- 06-loops
+- 07-loop-control
+- 08-lists
+- 09-tuples
+- 10-dictionaries
+- 11-sets
+- 12-strings
+- 13-basic-functions
+- 14-parameters
+- 15-scope
+- 16-lambda
+- 17-file-operations
+- 18-exception-handling
+- 19-classes-objects
+- 20-inheritance
+- 21-encapsulation
+- 22-polymorphism
+- 23-comprehensions
+- 24-generators
+- 25-decorators
+- 26-iterators
+- 27-modules
+- 28-packages
+- 29-standard-library
+- 30-mini-projects
+- 31-exercises
+- 32-challenges
 ```

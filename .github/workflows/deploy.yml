@@ -1,4 +1,4 @@
-name: Deploy VitePress site to Pages
+name: Deploy VitePress site to GitHub Pages
 
 on:
   # 在推送到 main 分支时触发
@@ -7,63 +7,54 @@ on:
   # 允许手动触发工作流
   workflow_dispatch:
 
-# 设置 GITHUB_TOKEN 的权限，允许部署到 GitHub Pages
+# 设置权限
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-# 只允许一个并发部署，跳过正在运行和最新队列之间的运行队列
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
-  # 构建工作
-  build:
+  # 构建和部署工作
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout source repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+          fetch-depth: 0
       
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
           cache-dependency-path: docs/package-lock.json
       
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
       - name: Install dependencies
         run: |
           cd docs
-          npm ci
+          npm install
       
-      - name: Build with VitePress
+      - name: Build VitePress site
         run: |
           cd docs
           npm run build
         env:
           NODE_ENV: production
       
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to target repository
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: docs/.vitepress/dist
-
-  # 部署工作
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # 使用个人访问令牌进行跨仓库部署
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          # 目标仓库
+          external_repository: xiumubai/xiumubai.github.io
+          # 发布目录
+          publish_dir: docs/.vitepress/dist
+          # 目标分支
+          publish_branch: main
+          # 目标目录
+          destination_dir: python-awesome-basic-coding
+          # 提交信息
+          commit_message: 'Deploy python-awesome-basic-coding docs from ${{ github.sha }}'
+          # 用户信息
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

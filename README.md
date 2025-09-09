@@ -37,7 +37,7 @@
 - [18. 异常处理](./18-exception-handling/README.md) - try、except、finally
 
 ### 第六部分：面向对象编程
-- [19. 类和对象](./19-classes-objects/README.md) - 类的定义和对象创建
+- [19. 类和对象](./19-classes-objects/README.md) - 类的定义、对象创建、实例方法、属性操作、构造方法、私有属性、类属性等面向对象编程基础
 - [20. 继承](./20-inheritance/README.md) - 类的继承和多态
 - [21. 封装](./21-encapsulation/README.md) - 私有属性和方法
 - [22. 特殊方法](./22-special-methods/README.md) - 魔术方法的使用
@@ -117,7 +117,6 @@
 - 16-lambda
 - 17-file-operations
 - 18-exception-handling
-- 19-classes-objects
 - 20-inheritance
 - 21-encapsulation
 - 22-polymorphism

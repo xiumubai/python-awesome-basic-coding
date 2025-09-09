@@ -1,202 +1,123 @@
-# 部署指南
+# 部署文档网站
 
-本文档提供了将 Python 基础编程学习文档网站部署到不同平台的详细指南。
+本文档说明如何将 VitePress 文档网站部署到 GitHub Pages。
 
-## 📋 部署前准备
+## 部署策略
 
-### 1. 环境要求
-- Node.js 18+ 
-- npm 或 yarn
-- Git
+本项目采用跨仓库部署策略，将构建后的静态文件部署到 `xiumubai/xiumubai.github.io` 仓库的 `python-awesome-basic-coding` 目录下。
 
-### 2. 本地构建测试
-```bash
-# 进入文档目录
-cd docs
+### 部署流程
 
-# 安装依赖
-npm install
+1. **触发条件**：代码推送到 `main` 分支时自动触发部署
+2. **构建过程**：
+   - 切换到 `docs` 目录
+   - 执行 `npm install` 安装依赖
+   - 执行 `npm run build` 构建静态文件
+3. **部署过程**：
+   - 将 `docs/.vitepress/dist` 目录下的文件部署到目标仓库
+   - 目标仓库：`xiumubai/xiumubai.github.io`
+   - 目标目录：`python-awesome-basic-coding`
+   - 目标分支：`main`
 
-# 本地开发
-npm run dev
+### 访问地址
 
-# 构建测试
-npm run build
-
-# 预览构建结果
-npm run preview
+部署成功后，可通过以下地址访问文档网站：
+```
+http://xiumubai.github.io/python-awesome-basic-coding/
 ```
 
-## 🚀 部署方案
+## 配置要求
 
-### 方案一：GitHub Pages（推荐）
+### 1. Personal Access Token 配置
 
-#### 自动部署（推荐）
-1. **启用 GitHub Pages**
-   - 进入仓库 Settings → Pages
-   - Source 选择 "GitHub Actions"
-   - 配置文件已创建：`.github/workflows/deploy.yml`
+由于需要跨仓库部署，必须配置个人访问令牌（Personal Access Token）：
 
-2. **触发部署**
-   ```bash
-   git add .
-   git commit -m "feat: add deployment configuration"
-   git push origin main
-   ```
+1. **生成 Token**：
+   - 访问 GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)
+   - 点击 "Generate new token (classic)"
+   - 设置 Token 名称，如：`deploy-python-awesome-basic-coding`
+   - 选择过期时间（建议选择较长时间或无过期时间）
+   - 勾选以下权限：
+     - `repo` (完整的仓库访问权限)
+     - `workflow` (更新 GitHub Actions 工作流)
 
-3. **访问网站**
-   - 部署完成后访问：`https://[username].github.io/python-awesome-basic-coding/`
+2. **配置 Secret**：
+   - 在当前仓库中，访问 Settings > Secrets and variables > Actions
+   - 点击 "New repository secret"
+   - Name: `PERSONAL_TOKEN`
+   - Value: 粘贴刚才生成的 Token
+   - 点击 "Add secret"
 
-#### 手动部署
-```bash
-# 安装 gh-pages
-npm install -g gh-pages
+### 2. 目标仓库权限
 
-# 构建并部署
-cd docs
-npm run deploy:github
-```
+确保生成 Token 的用户对目标仓库 `xiumubai/xiumubai.github.io` 具有写入权限。
 
-### 方案二：Vercel
+## 工作流文件
 
-#### 通过 Vercel CLI
-1. **安装 Vercel CLI**
-   ```bash
-   npm install -g vercel
-   ```
+部署配置文件位于：`.github/workflows/deploy.yml`
 
-2. **登录并部署**
-   ```bash
-   vercel login
-   vercel --prod
-   ```
+### 主要特性
 
-#### 通过 Vercel 网站
-1. 访问 [vercel.com](https://vercel.com)
-2. 连接 GitHub 仓库
-3. 选择项目并导入
-4. Vercel 会自动检测 `vercel.json` 配置
-5. 点击 Deploy
+- **自动触发**：推送到 main 分支时自动部署
+- **手动触发**：支持在 GitHub Actions 页面手动触发部署
+- **跨仓库部署**：使用 `peaceiris/actions-gh-pages` Action 实现跨仓库部署
+- **目录隔离**：部署到目标仓库的指定目录，不影响其他内容
 
-### 方案三：Netlify
+### 部署步骤详解
 
-#### 通过 Netlify CLI
-1. **安装 Netlify CLI**
-   ```bash
-   npm install -g netlify-cli
-   ```
+1. **检出源码**：获取当前仓库的完整代码
+2. **设置 Node.js**：配置 Node.js 20 环境，启用 npm 缓存
+3. **安装依赖**：在 docs 目录下执行 npm install
+4. **构建网站**：执行 npm run build 生成静态文件
+5. **部署文件**：将构建结果推送到目标仓库
 
-2. **登录并部署**
-   ```bash
-   netlify login
-   netlify deploy --prod
-   ```
+## 故障排除
 
-#### 通过 Netlify 网站
-1. 访问 [netlify.com](https://netlify.com)
-2. 连接 GitHub 仓库
-3. 配置构建设置：
-   - Build command: `cd docs && npm run build`
-   - Publish directory: `docs/.vitepress/dist`
-4. 点击 Deploy
+### 常见问题
 
-## ⚙️ 配置说明
+1. **Token 权限不足**
+   - 检查 PERSONAL_TOKEN 是否正确配置
+   - 确认 Token 具有 repo 权限
+   - 验证 Token 未过期
 
-### VitePress 配置
-- **base 路径**：根据部署环境自动调整
-- **输出目录**：`docs/.vitepress/dist`
-- **清理 URLs**：启用友好的 URL 格式
+2. **目标仓库访问失败**
+   - 确认目标仓库存在且可访问
+   - 检查 Token 所有者对目标仓库的权限
 
-### 构建脚本
-- `npm run build`：标准构建
-- `npm run build:github`：GitHub Pages 构建（带 base 路径）
-- `npm run preview`：本地预览构建结果
-- `npm run clean`：清理构建文件
+3. **构建失败**
+   - 检查 docs/package.json 中的依赖是否正确
+   - 确认 VitePress 配置文件无误
+   - 查看 GitHub Actions 日志获取详细错误信息
 
-## 🔧 常见问题
+4. **部署后访问 404**
+   - 确认目标仓库已启用 GitHub Pages
+   - 检查 GitHub Pages 设置中的源分支是否为 main
+   - 验证文件是否正确部署到 python-awesome-basic-coding 目录
 
-### 1. 资源路径问题
-**问题**：部署后样式或图片无法加载
+### 调试方法
 
-**解决方案**：
-- 检查 `base` 配置是否正确
-- 确保所有资源使用相对路径
-- 验证构建输出的路径结构
+1. **查看 Actions 日志**：
+   - 访问仓库的 Actions 页面
+   - 点击具体的工作流运行记录
+   - 查看每个步骤的详细日志
 
-### 2. 路由问题
-**问题**：刷新页面出现 404
+2. **验证部署结果**：
+   - 检查目标仓库 `xiumubai/xiumubai.github.io` 的 `python-awesome-basic-coding` 目录
+   - 确认文件已正确更新
 
-**解决方案**：
-- GitHub Pages：确保启用了 `cleanUrls`
-- Vercel/Netlify：检查重定向规则配置
+## 手动部署
 
-### 3. 构建失败
-**问题**：部署时构建失败
+如需手动触发部署：
 
-**解决方案**：
-```bash
-# 检查 Node.js 版本
-node --version
+1. 访问仓库的 Actions 页面
+2. 选择 "Deploy VitePress site to GitHub Pages" 工作流
+3. 点击 "Run workflow" 按钮
+4. 选择分支（通常是 main）
+5. 点击 "Run workflow" 确认执行
 
-# 清理依赖重新安装
-rm -rf node_modules package-lock.json
-npm install
+## 注意事项
 
-# 本地测试构建
-npm run build
-```
-
-### 4. 环境变量
-**问题**：不同环境需要不同配置
-
-**解决方案**：
-- 使用 `process.env.NODE_ENV` 判断环境
-- 在部署平台设置环境变量
-- 检查 `.env` 文件配置
-
-## 📊 性能优化
-
-### 1. 缓存策略
-- 静态资源：长期缓存（1年）
-- HTML 文件：不缓存或短期缓存
-- API 响应：根据更新频率设置
-
-### 2. 压缩优化
-- 启用 Gzip/Brotli 压缩
-- 图片优化和懒加载
-- 代码分割和按需加载
-
-### 3. CDN 配置
-- 使用 CDN 加速静态资源
-- 配置合适的缓存策略
-- 启用 HTTP/2 和 HTTP/3
-
-## 🔍 监控和维护
-
-### 1. 部署监控
-- 设置部署通知
-- 监控构建时间和成功率
-- 配置错误报告
-
-### 2. 性能监控
-- 使用 Lighthouse 检查性能
-- 监控页面加载时间
-- 检查 Core Web Vitals
-
-### 3. 定期维护
-- 更新依赖包
-- 检查安全漏洞
-- 优化构建配置
-
-## 📞 技术支持
-
-如果在部署过程中遇到问题，可以：
-
-1. 查看构建日志获取详细错误信息
-2. 检查各平台的官方文档
-3. 在项目仓库提交 Issue
-4. 参考社区解决方案
-
----
-
-**注意**：首次部署可能需要几分钟时间，请耐心等待。部署完成后，通常在 1-2 分钟内即可访问网
+- 确保 `docs` 目录下的 `package.json` 和 `package-lock.json` 文件存在且正确
+- VitePress 配置文件 `docs/.vitepress/config.js` 中的 base 路径应设置为 `/python-awesome-basic-coding/`
+- 部署过程中会覆盖目标仓库中 `python-awesome-basic-coding` 目录的内容
+- Token 应定期更新以确保安全性

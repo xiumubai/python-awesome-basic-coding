@@ -16,7 +16,7 @@
 
 ## 文件说明
 
-### 01_defining_classes.py - 类的定义基础
+### [01_defining_classes.py - 类的定义基础](./01_defining_classes.md)
 **学习内容：**
 - 类的基本语法和定义
 - 类的命名规范
@@ -29,12 +29,7 @@
 - 类的基本结构
 - 对象的创建和使用
 
-**运行方式：**
-```bash
-python3 01_defining_classes.py
-```
-
-### 02_creating_objects.py - 对象的创建和实例化
+### [02_creating_objects.py - 对象的创建和实例化](./02_creating_objects.md)
 **学习内容：**
 - 对象的实例化过程
 - 多个对象的创建和管理
@@ -47,12 +42,7 @@ python3 01_defining_classes.py
 - 内存中的对象存储
 - 对象引用和赋值
 
-**运行方式：**
-```bash
-python3 02_creating_objects.py
-```
-
-### 03_instance_methods.py - 实例方法的定义和使用
+### [03_instance_methods.py - 实例方法的定义和使用](./03_instance_methods.md)
 **学习内容：**
 - 实例方法的定义和调用
 - self参数的理解和使用
@@ -67,12 +57,7 @@ python3 02_creating_objects.py
 - 方法的封装性
 - 特殊方法（魔术方法）
 
-**运行方式：**
-```bash
-python3 03_instance_methods.py
-```
-
-### 04_instance_attributes.py - 实例属性的操作
+### [04_instance_attributes.py - 实例属性的操作](./04_instance_attributes.md)
 **学习内容：**
 - 实例属性的创建和访问
 - 属性的动态添加和删除
@@ -86,12 +71,7 @@ python3 03_instance_methods.py
 - `@property` 装饰器
 - 属性验证和控制
 
-**运行方式：**
-```bash
-python3 04_instance_attributes.py
-```
-
-### 05_constructor_method.py - 构造方法__init__
+### [05_constructor_method.py - 构造方法__init__](./05_constructor_method.md)
 **学习内容：**
 - 构造方法的定义和使用
 - 初始化参数的处理
@@ -105,12 +85,7 @@ python3 04_instance_attributes.py
 - 参数验证和异常处理
 - 类方法作为替代构造器
 
-**运行方式：**
-```bash
-python3 05_constructor_method.py
-```
-
-### 06_private_attributes.py - 私有属性和访问控制
+### [06_private_attributes.py - 私有属性和访问控制](./06_private_attributes.md)
 **学习内容：**
 - Python中的访问控制机制
 - 私有属性的实现（名称修饰）
@@ -124,12 +99,7 @@ python3 05_constructor_method.py
 - 封装的概念和实现
 - 访问控制的设计原则
 
-**运行方式：**
-```bash
-python3 06_private_attributes.py
-```
-
-### 07_class_attributes.py - 类属性和类方法
+### [07_class_attributes.py - 类属性和类方法](./07_class_attributes.md)
 **学习内容：**
 - 类属性的定义和使用
 - 类属性与实例属性的区别
@@ -143,12 +113,7 @@ python3 06_private_attributes.py
 - 类方法的应用场景
 - 静态方法的使用时机
 
-**运行方式：**
-```bash
-python3 07_class_attributes.py
-```
-
-### 08_exercises.py - 综合练习
+### [08_exercises.py - 综合练习](./08_exercises.md)
 **学习内容：**
 - 银行账户管理系统
 - 学生成绩管理系统
@@ -162,31 +127,26 @@ python3 07_class_attributes.py
 - 继承和多态的应用
 - 实际业务逻辑的面向对象建模
 
-**运行方式：**
-```bash
-python3 08_exercises.py
-```
-
 ## 学习路径
 
 ### 第一阶段：基础概念（1-2天）
-1. 学习 `01_defining_classes.py` - 理解类和对象的基本概念
-2. 学习 `02_creating_objects.py` - 掌握对象的创建和实例化
+1. 学习 [类的定义基础](./01_defining_classes.md) - 理解类和对象的基本概念
+2. 学习 [对象的创建和实例化](./02_creating_objects.md) - 掌握对象的创建和实例化
 3. 完成基础练习，创建简单的类
 
 ### 第二阶段：方法和属性（2-3天）
-1. 学习 `03_instance_methods.py` - 掌握实例方法的使用
-2. 学习 `04_instance_attributes.py` - 理解属性的操作和管理
-3. 学习 `05_constructor_method.py` - 掌握构造方法的使用
+1. 学习 [实例方法的定义和使用](./03_instance_methods.md) - 掌握实例方法的使用
+2. 学习 [实例属性的操作](./04_instance_attributes.md) - 理解属性的操作和管理
+3. 学习 [构造方法__init__](./05_constructor_method.md) - 掌握构造方法的使用
 4. 练习设计包含方法和属性的类
 
 ### 第三阶段：高级特性（2-3天）
-1. 学习 `06_private_attributes.py` - 掌握访问控制机制
-2. 学习 `07_class_attributes.py` - 理解类属性和类方法
+1. 学习 [私有属性和访问控制](./06_private_attributes.md) - 掌握访问控制机制
+2. 学习 [类属性和类方法](./07_class_attributes.md) - 理解类属性和类方法
 3. 练习设计更复杂的类结构
 
 ### 第四阶段：综合应用（3-4天）
-1. 学习 `08_exercises.py` - 完成综合练习项目
+1. 学习 [综合练习](./08_exercises.md) - 完成综合练习项目
 2. 独立设计和实现完整的类系统
 3. 总结面向对象编程的设计原则
 

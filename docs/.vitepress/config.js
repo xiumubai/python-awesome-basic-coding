@@ -3,11 +3,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Python基础编程学习',
   description: 'Python基础编程完整学习教程',
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/python-awesome-basic-coding/' : '/',
   ignoreDeadLinks: true,
   cleanUrls: true,
   build: {
-    chunkSizeWarningLimit: 2000 // 提高到2MB
+    chunkSizeWarningLimit: 2000 // 提高到1MB
   },
 
   themeConfig: {

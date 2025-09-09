@@ -56,8 +56,8 @@ export default defineConfig({
           items: [
             { text: '🔧 函数基础', link: '/guide/13-basic-functions/' },
             { text: '📊 函数参数', link: '/guide/14-function-parameters/' },
-            { text: '🔄 函数返回值', link: '/guide/15-function-returns/' },
-            { text: '🌐 作用域', link: '/guide/16-function-scope/' }
+            { text: '🌐 函数作用域', link: '/guide/15-function-scope/' },
+            { text: '⚡ Lambda表达式', link: '/guide/16-lambda/' }
           ]
         },
         {
@@ -444,21 +444,71 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 函数基础', link: '/guide/13-functions/' },
-            { text: '➡️ 下一模块: 函数返回值', link: '/guide/15-function-returns/' }
+            { text: '⬅️ 上一模块: 函数基础', link: '/guide/13-basic-functions/' },
+            { text: '➡️ 下一模块: 函数作用域', link: '/guide/15-function-scope/' }
           ]
         },
         {
           text: '📊 函数参数',
           items: [
             { text: '📖 模块概述', link: '/guide/14-function-parameters/' },
-            { text: '📝 位置参数', link: '/guide/14-function-parameters/01_positional_parameters' },
-            { text: '🏷️ 关键字参数', link: '/guide/14-function-parameters/02_keyword_parameters' },
-            { text: '⭐ 默认参数', link: '/guide/14-function-parameters/03_default_parameters' },
-            { text: '📦 可变参数', link: '/guide/14-function-parameters/04_variable_parameters' },
-            { text: '🗂️ 关键字可变参数', link: '/guide/14-function-parameters/05_keyword_variable_parameters' },
-            { text: '🔀 参数解包', link: '/guide/14-function-parameters/06_parameter_unpacking' },
-            { text: '💪 综合练习', link: '/guide/14-function-parameters/07_exercises' }
+            { text: '📝 位置参数', link: '/guide/14-function-parameters/02_positional_parameters' },
+            { text: '🏷️ 关键字参数', link: '/guide/14-function-parameters/03_keyword_parameters' },
+            { text: '⭐ 默认参数', link: '/guide/14-function-parameters/04_default_parameters' },
+            { text: '📦 可变长度参数', link: '/guide/14-function-parameters/05_variable_length_args' },
+            { text: '🗂️ 关键字可变参数', link: '/guide/14-function-parameters/06_keyword_variable_args' },
+            { text: '🔀 参数组合', link: '/guide/14-function-parameters/07_parameter_combinations' },
+            { text: '📦 参数解包', link: '/guide/14-function-parameters/08_parameter_unpacking' },
+            { text: '✅ 参数验证', link: '/guide/14-function-parameters/09_parameter_validation' },
+            { text: '💪 综合练习', link: '/guide/14-function-parameters/10_exercises' }
+          ]
+        }
+      ],
+      '/guide/15-function-scope/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 函数参数', link: '/guide/14-function-parameters/' },
+            { text: '➡️ 下一模块: Lambda表达式', link: '/guide/16-lambda/' }
+          ]
+        },
+        {
+          text: '🌐 函数作用域',
+          items: [
+            { text: '📖 模块概述', link: '/guide/15-function-scope/' },
+            { text: '🏠 局部作用域', link: '/guide/15-function-scope/02_local_scope' },
+            { text: '🌍 全局作用域', link: '/guide/15-function-scope/03_global_scope' },
+            { text: '🔗 global关键字', link: '/guide/15-function-scope/04_global_keyword' },
+            { text: '🔒 nonlocal关键字', link: '/guide/15-function-scope/05_nonlocal_keyword' },
+            { text: '🏗️ 嵌套作用域', link: '/guide/15-function-scope/06_enclosing_scope' },
+            { text: '🔧 内置作用域', link: '/guide/15-function-scope/07_built_in_scope' },
+            { text: '🔍 LEGB规则', link: '/guide/15-function-scope/08_scope_resolution' },
+            { text: '💪 综合练习', link: '/guide/15-function-scope/09_exercises' }
+          ]
+        }
+      ],
+      '/guide/16-lambda/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 函数作用域', link: '/guide/15-function-scope/' },
+            { text: '➡️ 下一模块: 文件操作', link: '/guide/17-file-operations/' }
+          ]
+        },
+        {
+          text: '⚡ Lambda表达式',
+          items: [
+            { text: '📖 模块概述', link: '/guide/16-lambda/' },
+            { text: '🔰 Lambda基础', link: '/guide/16-lambda/01_lambda_basics' },
+            { text: '⚖️ Lambda vs 函数', link: '/guide/16-lambda/02_lambda_vs_function' },
+            { text: '🗺️ Lambda与map', link: '/guide/16-lambda/03_lambda_with_map' },
+            { text: '🔍 Lambda与filter', link: '/guide/16-lambda/04_lambda_with_filter' },
+            { text: '🔄 Lambda与reduce', link: '/guide/16-lambda/05_lambda_with_reduce' },
+            { text: '📊 Lambda与排序', link: '/guide/16-lambda/06_lambda_with_sort' },
+            { text: '🚀 Lambda高级用法', link: '/guide/16-lambda/07_lambda_advanced' },
+            { text: '💪 综合练习', link: '/guide/16-lambda/08_exercises' }
           ]
         }
       ],
@@ -512,7 +562,7 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 作用域', link: '/guide/16-scope/' },
+            { text: '⬅️ 上一模块: Lambda表达式', link: '/guide/16-lambda/' },
             { text: '➡️ 下一模块: 异常处理', link: '/guide/18-exception-handling/' }
           ]
         },

@@ -650,10 +650,11 @@ export default defineConfig({
             { text: '🧬 基础继承', link: '/guide/20-inheritance/01_basic_inheritance' },
             { text: '🔄 方法重写', link: '/guide/20-inheritance/02_method_overriding' },
             { text: '🆙 super函数', link: '/guide/20-inheritance/03_super_function' },
-            { text: '🏗️ 多级继承', link: '/guide/20-inheritance/04_multilevel_inheritance' },
-            { text: '🔀 多重继承', link: '/guide/20-inheritance/05_multiple_inheritance' },
-            { text: '🔍 MRO方法解析', link: '/guide/20-inheritance/06_mro' },
-            { text: '💪 综合练习', link: '/guide/20-inheritance/07_exercises' }
+            { text: '🔀 多重继承', link: '/guide/20-inheritance/04_multiple_inheritance' },
+            { text: '🔍 MRO方法解析', link: '/guide/20-inheritance/05_mro' },
+            { text: '🎯 抽象基类', link: '/guide/20-inheritance/06_abstract_classes' },
+            { text: '🏗️ 组合vs继承', link: '/guide/20-inheritance/07_composition_vs_inheritance' },
+            { text: '💪 综合练习', link: '/guide/20-inheritance/08_exercises' }
           ]
         }
       ],

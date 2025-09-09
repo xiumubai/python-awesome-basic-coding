@@ -131,6 +131,12 @@
   <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
 </div>
 
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🧬 <a href="./20-inheritance/" style="color: inherit; text-decoration: none;">继承</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">深入学习继承机制：基础继承、方法重写、super()函数、多重继承、MRO、抽象基类、组合vs继承等</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
+</div>
+
 </div>
 
 ## 🚀 开始学习

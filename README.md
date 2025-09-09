@@ -33,7 +33,7 @@
 - [16. 高级函数](./16-advanced-functions/README.md) - lambda、装饰器等
 
 ### 第五部分：文件和异常处理
-- [17. 文件操作](./17-file-operations/README.md) - 文件读写操作
+- [17. 文件操作](./17-file-operations/README.md) - 文件基础操作、读写、模式、指针、二进制文件、路径操作、异常处理
 - [18. 异常处理](./18-exception-handling/README.md) - try、except、finally
 
 ### 第六部分：面向对象编程

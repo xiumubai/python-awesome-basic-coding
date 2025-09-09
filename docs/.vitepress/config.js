@@ -570,14 +570,16 @@ export default defineConfig({
           text: '📁 文件操作',
           items: [
             { text: '📖 模块概述', link: '/guide/17-file-operations/' },
-            { text: '📖 打开文件', link: '/guide/17-file-operations/01_opening_files' },
-            { text: '📝 读取文件', link: '/guide/17-file-operations/02_reading_files' },
-            { text: '✏️ 写入文件', link: '/guide/17-file-operations/03_writing_files' },
-            { text: '📂 文件路径', link: '/guide/17-file-operations/04_file_paths' },
-            { text: '🗂️ 目录操作', link: '/guide/17-file-operations/05_directory_operations' },
-            { text: '📊 CSV文件', link: '/guide/17-file-operations/06_csv_files' },
-            { text: '📄 JSON文件', link: '/guide/17-file-operations/07_json_files' },
-            { text: '💪 综合练习', link: '/guide/17-file-operations/08_exercises' }
+            { text: '📂 文件基础操作', link: '/guide/17-file-operations/01_file_basics' },
+            { text: '📖 文件读取', link: '/guide/17-file-operations/02_file_reading' },
+            { text: '✏️ 文件写入', link: '/guide/17-file-operations/03_file_writing' },
+            { text: '🔧 文件模式', link: '/guide/17-file-operations/04_file_modes' },
+            { text: '🛡️ with语句', link: '/guide/17-file-operations/05_with_statement' },
+            { text: '📍 文件指针', link: '/guide/17-file-operations/06_file_pointer' },
+            { text: '💾 二进制文件', link: '/guide/17-file-operations/07_binary_files' },
+            { text: '📂 路径操作', link: '/guide/17-file-operations/08_path_operations' },
+            { text: '⚠️ 文件异常处理', link: '/guide/17-file-operations/09_file_exceptions' },
+            { text: '💪 综合练习', link: '/guide/17-file-operations/10_exercises' }
           ]
         }
       ],

@@ -97,6 +97,24 @@
 
 </div>
 
+### 🔧 函数和文件操作
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0;">
+
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
+  <h4 style="margin: 0 0 10px 0; color: #666;">⚡ 函数基础</h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">学习函数定义、参数和作用域</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+</div>
+
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">📁 <a href="./17-file-operations/" style="color: inherit; text-decoration: none;">文件操作</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">掌握文件读写、路径操作和异常处理</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
+</div>
+
+</div>
+
 ## 🚀 开始学习
 
 准备好了吗？让我们从 **[📊 变量和数据类型](./01-variables-and-types/)** 开始你的Python编程之旅！

@@ -1,0 +1,18 @@
+2025-09-09 11:47:04,316 - ERROR - 主程序异常：embedded null byte
+2025-09-09 11:47:04,316 - ERROR - 异常详情:
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/17-file-operations/09_file_exceptions.py", line 693, in main
+    demonstrate_common_exceptions()
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/17-file-operations/09_file_exceptions.py", line 127, in demonstrate_common_exceptions
+    with open(illegal_name, 'w') as f:
+ValueError: embedded null byte
+
+2025-09-09 11:56:27,623 - ERROR - 主程序异常：embedded null byte
+2025-09-09 11:56:27,624 - ERROR - 异常详情:
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/17-file-operations/09_file_exceptions.py", line 693, in main
+    demonstrate_common_exceptions()
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/17-file-operations/09_file_exceptions.py", line 127, in demonstrate_common_exceptions
+    with open(illegal_name, 'w') as f:
+ValueError: embedded null byte
+

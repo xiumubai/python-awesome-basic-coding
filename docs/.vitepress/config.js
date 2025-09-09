@@ -78,9 +78,10 @@ export default defineConfig({
           text: '7. 面向对象',
           items: [
             { text: '🏗️ 类和对象', link: '/guide/19-classes-objects/' },
-            { text: '🔒 封装', link: '/guide/20-encapsulation/' },
-            { text: '🧬 继承', link: '/guide/21-inheritance/' },
-            { text: '🎭 多态', link: '/guide/22-polymorphism/' }
+            { text: '🧬 继承', link: '/guide/20-inheritance/' },
+            { text: '🔄 多态', link: '/guide/21-polymorphism/' },
+            { text: '📦 封装', link: '/guide/22-encapsulation/' },
+            { text: '🎯 特殊方法', link: '/guide/23-special-methods/' }
           ]
         },
         {

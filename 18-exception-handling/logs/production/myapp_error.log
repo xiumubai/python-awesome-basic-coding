@@ -1,0 +1,11 @@
+2025-09-09 13:59:38,683 - myapp - ERROR - 08_logging_exceptions.py:832 - log_security_event() - 安全事件: failed_login
+None
+2025-09-09 13:59:38,683 - myapp - ERROR - 08_logging_exceptions.py:897 - test_production_logging() - 业务逻辑异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 895, in test_production_logging
+    raise ValueError("无效的用户输入")
+ValueError: 无效的用户输入
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 895, in test_production_logging
+    raise ValueError("无效的用户输入")
+ValueError: 无效的用户输入

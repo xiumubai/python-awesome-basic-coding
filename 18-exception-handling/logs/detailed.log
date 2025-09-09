@@ -1,0 +1,38 @@
+2025-09-09 13:59:21,333 - advanced_example - DEBUG - 08_logging_exceptions.py:271 - test_advanced_logging() - 调试信息 - 只在文件中记录
+2025-09-09 13:59:21,333 - advanced_example - [32mINFO[0m - 08_logging_exceptions.py:272 - test_advanced_logging() - 信息日志 - 控制台和文件
+2025-09-09 13:59:21,334 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:273 - test_advanced_logging() - 警告信息 - 所有处理器
+2025-09-09 13:59:21,334 - advanced_example - [31mERROR[0m - 08_logging_exceptions.py:274 - test_advanced_logging() - 错误信息 - 所有处理器
+2025-09-09 13:59:21,335 - advanced_example - [31mERROR[0m - 08_logging_exceptions.py:280 - test_advanced_logging() - 这是一个测试异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 278, in test_advanced_logging
+    raise ValueError("测试异常")
+ValueError: 测试异常
+2025-09-09 13:59:21,337 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 1/10
+2025-09-09 13:59:21,337 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 2/10
+2025-09-09 13:59:21,338 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 3/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 4/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 5/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 6/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 7/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 8/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 9/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 10/10
+2025-09-09 13:59:38,571 - advanced_example - DEBUG - 08_logging_exceptions.py:271 - test_advanced_logging() - 调试信息 - 只在文件中记录
+2025-09-09 13:59:38,572 - advanced_example - [32mINFO[0m - 08_logging_exceptions.py:272 - test_advanced_logging() - 信息日志 - 控制台和文件
+2025-09-09 13:59:38,572 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:273 - test_advanced_logging() - 警告信息 - 所有处理器
+2025-09-09 13:59:38,572 - advanced_example - [31mERROR[0m - 08_logging_exceptions.py:274 - test_advanced_logging() - 错误信息 - 所有处理器
+2025-09-09 13:59:38,572 - advanced_example - [31mERROR[0m - 08_logging_exceptions.py:280 - test_advanced_logging() - 这是一个测试异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 278, in test_advanced_logging
+    raise ValueError("测试异常")
+ValueError: 测试异常
+2025-09-09 13:59:38,573 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 1/10
+2025-09-09 13:59:38,573 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 2/10
+2025-09-09 13:59:38,573 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 3/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 4/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 5/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 6/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 7/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 8/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 9/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 08_logging_exceptions.py:284 - test_advanced_logging() - 批量日志测试 10/10

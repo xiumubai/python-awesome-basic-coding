@@ -598,11 +598,13 @@ export default defineConfig({
             { text: '📖 模块概述', link: '/guide/18-exception-handling/' },
             { text: '🚨 异常基础', link: '/guide/18-exception-handling/01_exception_basics' },
             { text: '🛡️ try-except', link: '/guide/18-exception-handling/02_try_except' },
-            { text: '🔄 多重异常', link: '/guide/18-exception-handling/03_multiple_exceptions' },
-            { text: '🧹 finally子句', link: '/guide/18-exception-handling/04_finally_clause' },
-            { text: '🚀 抛出异常', link: '/guide/18-exception-handling/05_raising_exceptions' },
+            { text: '🔄 多重异常', link: '/guide/18-exception-handling/03_multiple_except' },
+            { text: '🧹 else和finally', link: '/guide/18-exception-handling/04_else_finally' },
+            { text: '🚀 抛出异常', link: '/guide/18-exception-handling/05_raise_exception' },
             { text: '🎯 自定义异常', link: '/guide/18-exception-handling/06_custom_exceptions' },
-            { text: '💪 综合练习', link: '/guide/18-exception-handling/07_exercises' }
+            { text: '🔗 异常链接', link: '/guide/18-exception-handling/07_exception_chaining' },
+            { text: '📝 异常日志', link: '/guide/18-exception-handling/08_logging_exceptions' },
+            { text: '💡 最佳实践', link: '/guide/18-exception-handling/09_best_practices' }
           ]
         }
       ],

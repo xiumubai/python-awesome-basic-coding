@@ -1,0 +1,276 @@
+2025-09-09 13:59:21,313 - basic_example - DEBUG - 这是调试信息
+2025-09-09 13:59:21,313 - basic_example - INFO - 这是信息日志
+2025-09-09 13:59:21,314 - basic_example - WARNING - 这是警告信息
+2025-09-09 13:59:21,314 - basic_example - ERROR - 这是错误信息
+2025-09-09 13:59:21,314 - basic_example - CRITICAL - 这是严重错误
+2025-09-09 13:59:21,314 - basic_example - ERROR - 计算过程中发生异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 100, in demonstrate_exception_logging
+    result = risky_function(10, 0)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 92, in risky_function
+    raise ZeroDivisionError("除数不能为零")
+ZeroDivisionError: 除数不能为零
+2025-09-09 13:59:21,321 - basic_example - ERROR - 计算失败: x不能为负数
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 108, in demonstrate_exception_logging
+    result = risky_function(-5, 2)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 94, in risky_function
+    raise ValueError("x不能为负数")
+ValueError: x不能为负数
+2025-09-09 13:59:21,322 - basic_example - ERROR - 异常详情:
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 116, in demonstrate_exception_logging
+    result = risky_function(10, 0)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 92, in risky_function
+    raise ZeroDivisionError("除数不能为零")
+ZeroDivisionError: 除数不能为零
+
+2025-09-09 13:59:21,324 - basic_example - ERROR - 发生异常链
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 126, in demonstrate_exception_logging
+    result = risky_function(10, 0)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 92, in risky_function
+    raise ZeroDivisionError("除数不能为零")
+ZeroDivisionError: 除数不能为零
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 128, in demonstrate_exception_logging
+    raise RuntimeError("计算模块错误") from e
+RuntimeError: 计算模块错误
+2025-09-09 13:59:21,329 - basic_example - INFO - 异常链: RuntimeError: 计算模块错误 -> ZeroDivisionError: 除数不能为零
+2025-09-09 13:59:21,333 - advanced_example - DEBUG - 调试信息 - 只在文件中记录
+2025-09-09 13:59:21,333 - advanced_example - [32mINFO[0m - 信息日志 - 控制台和文件
+2025-09-09 13:59:21,334 - advanced_example - [33mWARNING[0m - 警告信息 - 所有处理器
+2025-09-09 13:59:21,334 - advanced_example - [31mERROR[0m - 错误信息 - 所有处理器
+2025-09-09 13:59:21,335 - advanced_example - [31mERROR[0m - 这是一个测试异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 278, in test_advanced_logging
+    raise ValueError("测试异常")
+ValueError: 测试异常
+2025-09-09 13:59:21,337 - advanced_example - [33mWARNING[0m - 批量日志测试 1/10
+2025-09-09 13:59:21,337 - advanced_example - [33mWARNING[0m - 批量日志测试 2/10
+2025-09-09 13:59:21,338 - advanced_example - [33mWARNING[0m - 批量日志测试 3/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 4/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 5/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 6/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 7/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 8/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 9/10
+2025-09-09 13:59:21,339 - advanced_example - [33mWARNING[0m - 批量日志测试 10/10
+2025-09-09 13:59:21,341 - structured_example - INFO - {"timestamp": "2025-09-09T05:59:21.340789+00:00", "level": "INFO", "message": "用户登录", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "login", "ip_address": "192.168.1.100", "user_agent": "Mozilla/5.0"}
+2025-09-09 13:59:21,341 - structured_example - WARNING - {"timestamp": "2025-09-09T05:59:21.341095+00:00", "level": "WARNING", "message": "登录尝试失败", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "login", "reason": "invalid_password", "attempts": 3}
+2025-09-09 13:59:21,341 - structured_example - INFO - {"timestamp": "2025-09-09T05:59:21.341160+00:00", "level": "INFO", "message": "订单创建", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "create_order", "order_id": "order_001", "amount": 99.99, "currency": "USD"}
+2025-09-09 13:59:21,341 - structured_example - ERROR - {"timestamp": "2025-09-09T05:59:21.341262+00:00", "level": "ERROR", "message": "订单处理失败", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "process_order", "order_id": "order_001", "error_code": "DIVISION_ERROR", "exc_info": ["<class 'ZeroDivisionError'>", "division by zero", "<traceback object at 0x100b29ec0>"], "exception": {"type": "ZeroDivisionError", "message": "division by zero", "traceback": ["Traceback (most recent call last):\n", "  File \"/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py\", line 446, in test_structured_logging\n    result = 10 / 0\n", "ZeroDivisionError: division by zero\n"]}}
+2025-09-09 13:59:21,341 - structured_example - INFO - {"timestamp": "2025-09-09T05:59:21.341397+00:00", "level": "INFO", "message": "API响应时间", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "get_user_profile", "response_time_ms": 150, "status_code": 200, "cache_hit": true}
+2025-09-09 13:59:38,570 - basic_example - DEBUG - 这是调试信息
+2025-09-09 13:59:38,570 - basic_example - INFO - 这是信息日志
+2025-09-09 13:59:38,570 - basic_example - WARNING - 这是警告信息
+2025-09-09 13:59:38,570 - basic_example - ERROR - 这是错误信息
+2025-09-09 13:59:38,570 - basic_example - CRITICAL - 这是严重错误
+2025-09-09 13:59:38,570 - basic_example - ERROR - 计算过程中发生异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 100, in demonstrate_exception_logging
+    result = risky_function(10, 0)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 92, in risky_function
+    raise ZeroDivisionError("除数不能为零")
+ZeroDivisionError: 除数不能为零
+2025-09-09 13:59:38,571 - basic_example - ERROR - 计算失败: x不能为负数
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 108, in demonstrate_exception_logging
+    result = risky_function(-5, 2)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 94, in risky_function
+    raise ValueError("x不能为负数")
+ValueError: x不能为负数
+2025-09-09 13:59:38,571 - basic_example - ERROR - 异常详情:
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 116, in demonstrate_exception_logging
+    result = risky_function(10, 0)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 92, in risky_function
+    raise ZeroDivisionError("除数不能为零")
+ZeroDivisionError: 除数不能为零
+
+2025-09-09 13:59:38,571 - basic_example - ERROR - 发生异常链
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 126, in demonstrate_exception_logging
+    result = risky_function(10, 0)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 92, in risky_function
+    raise ZeroDivisionError("除数不能为零")
+ZeroDivisionError: 除数不能为零
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 128, in demonstrate_exception_logging
+    raise RuntimeError("计算模块错误") from e
+RuntimeError: 计算模块错误
+2025-09-09 13:59:38,571 - basic_example - INFO - 异常链: RuntimeError: 计算模块错误 -> ZeroDivisionError: 除数不能为零
+2025-09-09 13:59:38,571 - advanced_example - DEBUG - 调试信息 - 只在文件中记录
+2025-09-09 13:59:38,572 - advanced_example - [32mINFO[0m - 信息日志 - 控制台和文件
+2025-09-09 13:59:38,572 - advanced_example - [33mWARNING[0m - 警告信息 - 所有处理器
+2025-09-09 13:59:38,572 - advanced_example - [31mERROR[0m - 错误信息 - 所有处理器
+2025-09-09 13:59:38,572 - advanced_example - [31mERROR[0m - 这是一个测试异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 278, in test_advanced_logging
+    raise ValueError("测试异常")
+ValueError: 测试异常
+2025-09-09 13:59:38,573 - advanced_example - [33mWARNING[0m - 批量日志测试 1/10
+2025-09-09 13:59:38,573 - advanced_example - [33mWARNING[0m - 批量日志测试 2/10
+2025-09-09 13:59:38,573 - advanced_example - [33mWARNING[0m - 批量日志测试 3/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 4/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 5/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 6/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 7/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 8/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 9/10
+2025-09-09 13:59:38,574 - advanced_example - [33mWARNING[0m - 批量日志测试 10/10
+2025-09-09 13:59:38,575 - structured_example - INFO - {"timestamp": "2025-09-09T05:59:38.575099+00:00", "level": "INFO", "message": "用户登录", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "login", "ip_address": "192.168.1.100", "user_agent": "Mozilla/5.0"}
+2025-09-09 13:59:38,575 - structured_example - WARNING - {"timestamp": "2025-09-09T05:59:38.575522+00:00", "level": "WARNING", "message": "登录尝试失败", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "login", "reason": "invalid_password", "attempts": 3}
+2025-09-09 13:59:38,575 - structured_example - INFO - {"timestamp": "2025-09-09T05:59:38.575636+00:00", "level": "INFO", "message": "订单创建", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "create_order", "order_id": "order_001", "amount": 99.99, "currency": "USD"}
+2025-09-09 13:59:38,576 - structured_example - ERROR - {"timestamp": "2025-09-09T05:59:38.575928+00:00", "level": "ERROR", "message": "订单处理失败", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "process_order", "order_id": "order_001", "error_code": "DIVISION_ERROR", "exc_info": ["<class 'ZeroDivisionError'>", "division by zero", "<traceback object at 0x103a25ec0>"], "exception": {"type": "ZeroDivisionError", "message": "division by zero", "traceback": ["Traceback (most recent call last):\n", "  File \"/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py\", line 446, in test_structured_logging\n    result = 10 / 0\n", "ZeroDivisionError: division by zero\n"]}}
+2025-09-09 13:59:38,576 - structured_example - INFO - {"timestamp": "2025-09-09T05:59:38.576073+00:00", "level": "INFO", "message": "API响应时间", "context": {"user_id": "user_123", "session_id": "session_456", "request_id": "req_789", "module": "user_service"}, "operation": "get_user_profile", "response_time_ms": 150, "status_code": 200, "cache_hit": true}
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始执行函数: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始执行函数: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始执行函数: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始执行函数: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始执行函数: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 函数执行成功: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 函数执行成功: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 函数执行成功: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 函数执行成功: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 函数执行成功: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始执行函数: __main__.calculate_factorial
+2025-09-09 13:59:38,576 - test_logger - ERROR - 函数执行失败: __main__.calculate_factorial
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 498, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 618, in calculate_factorial
+    raise ValueError("n必须为非负整数")
+ValueError: n必须为非负整数
+2025-09-09 13:59:38,576 - test_logger - ERROR - 函数 __main__.divide_numbers 发生异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 540, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 626, in divide_numbers
+    return a / b
+ZeroDivisionError: division by zero
+2025-09-09 13:59:38,576 - test_logger - INFO - 开始操作: 数据处理
+2025-09-09 13:59:38,681 - test_logger - INFO - 操作完成: 数据处理
+2025-09-09 13:59:38,681 - test_logger - INFO - 开始操作: 错误处理
+2025-09-09 13:59:38,682 - test_logger - ERROR - 操作失败: 错误处理
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 570, in log_context
+    yield logger
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 657, in test_logging_decorators
+    raise RuntimeError("模拟处理错误")
+RuntimeError: 模拟处理错误
+2025-09-09 13:59:38,682 - myapp - INFO - 应用启动
+2025-09-09 13:59:38,682 - myapp - WARNING - 用户操作: login
+2025-09-09 13:59:38,683 - myapp - INFO - 性能指标: database_query
+2025-09-09 13:59:38,683 - myapp - ERROR - 安全事件: failed_login
+2025-09-09 13:59:38,683 - myapp - ERROR - 业务逻辑异常
+Traceback (most recent call last):
+  File "/Users/guojianli/Documents/python/python-awesome-basic-coding/18-exception-handling/08_logging_exceptions.py", line 895, in test_production_logging
+    raise ValueError("无效的用户输入")
+ValueError: 无效的用户输入
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 1/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 2/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 3/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 4/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 5/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 6/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 7/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 8/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 9/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 10/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 11/100
+2025-09-09 13:59:38,683 - myapp - INFO - 批量处理记录 12/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 13/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 14/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 15/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 16/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 17/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 18/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 19/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 20/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 21/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 22/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 23/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 24/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 25/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 26/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 27/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 28/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 29/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 30/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 31/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 32/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 33/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 34/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 35/100
+2025-09-09 13:59:38,684 - myapp - INFO - 批量处理记录 36/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 37/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 38/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 39/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 40/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 41/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 42/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 43/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 44/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 45/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 46/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 47/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 48/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 49/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 50/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 51/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 52/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 53/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 54/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 55/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 56/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 57/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 58/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 59/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 60/100
+2025-09-09 13:59:38,685 - myapp - INFO - 批量处理记录 61/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 62/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 63/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 64/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 65/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 66/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 67/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 68/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 69/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 70/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 71/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 72/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 73/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 74/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 75/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 76/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 77/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 78/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 79/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 80/100
+2025-09-09 13:59:38,686 - myapp - INFO - 批量处理记录 81/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 82/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 83/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 84/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 85/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 86/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 87/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 88/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 89/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 90/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 91/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 92/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 93/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 94/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 95/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 96/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 97/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 98/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 99/100
+2025-09-09 13:59:38,687 - myapp - INFO - 批量处理记录 100/100

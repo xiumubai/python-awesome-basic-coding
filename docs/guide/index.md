@@ -47,16 +47,16 @@
   <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">💬 输入输出</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">💬 <a href="./03-input-output/" style="color: inherit; text-decoration: none;">输入输出</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">学习程序与用户的交互方法</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">🔤 字符串处理</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🔤 <a href="./12-strings/" style="color: inherit; text-decoration: none;">字符串处理</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">深入学习字符串操作和格式化</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
 </div>
@@ -65,16 +65,16 @@
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0;">
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">🔀 条件语句</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🔀 <a href="./05-conditions/" style="color: inherit; text-decoration: none;">条件语句</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">学习if-elif-else条件判断</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">🔄 循环结构</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🔄 <a href="./06-loops/" style="color: inherit; text-decoration: none;">循环结构</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">掌握for和while循环的使用</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
 </div>
@@ -83,16 +83,16 @@
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0;">
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">📋 列表和元组</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">📋 <a href="./08-lists/" style="color: inherit; text-decoration: none;">列表</a>和<a href="./09-tuples/" style="color: inherit; text-decoration: none;">元组</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">学习序列类型的操作方法</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">🗂️ 字典和集合</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🗂️ <a href="./10-dictionaries/" style="color: inherit; text-decoration: none;">字典</a>和<a href="./11-sets/" style="color: inherit; text-decoration: none;">集合</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">掌握映射和集合类型的使用</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
 </div>
@@ -101,15 +101,21 @@
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0;">
 
-<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f0f0f0;">
-  <h4 style="margin: 0 0 10px 0; color: #666;">⚡ 函数基础</h4>
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">⚡ <a href="./13-basic-functions/" style="color: inherit; text-decoration: none;">函数基础</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">学习函数定义、参数和作用域</p>
-  <div style="margin-top: 8px; font-size: 12px; color: #888;">⏳ 待完成文档</div>
+  <div style="margin-top: 8px; font-size: 12px; color: #888;">✅ 已完成文档</div>
 </div>
 
 <div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
   <h4 style="margin: 0 0 10px 0; color: #0366d6;">📁 <a href="./17-file-operations/" style="color: inherit; text-decoration: none;">文件操作</a></h4>
   <p style="margin: 0; font-size: 14px; color: #666;">掌握文件读写、路径操作和异常处理</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
+</div>
+
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">⚠️ <a href="./18-exception-handling/" style="color: inherit; text-decoration: none;">异常处理</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">学习try-except语法、自定义异常和异常处理最佳实践</p>
   <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
 </div>
 

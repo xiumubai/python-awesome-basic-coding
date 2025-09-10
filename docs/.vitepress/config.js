@@ -81,29 +81,29 @@ export default defineConfig({
             { text: '🧬 继承', link: '/guide/20-inheritance/' },
             { text: '🧬 封装', link: '/guide/21-encapsulation/' },
             { text: '🔄 多态', link: '/guide/22-polymorphism/' },
-            { text: '🎯 特殊方法', link: '/guide/24-special-methods/' }
+            { text: '📊 推导式', link: '/guide/23-comprehensions/' }
           ]
         },
         {
           text: '8. 高级特性',
           items: [
-            { text: '🎯 装饰器', link: '/guide/23-decorators/' },
-            { text: '⚡ 生成器', link: '/guide/24-generators/' },
-            { text: '🔄 迭代器', link: '/guide/25-iterators/' },
-            { text: '🎪 上下文管理器', link: '/guide/26-context-managers/' }
+            { text: '🎯 装饰器', link: '/guide/24-decorators/' },
+            { text: '⚡ 生成器', link: '/guide/25-generators/' },
+            { text: '🔄 迭代器', link: '/guide/26-iterators/' },
+            { text: '🎪 上下文管理器', link: '/guide/27-context-managers/' }
           ]
         },
         {
           text: '9. 模块和包',
           items: [
-            { text: '📦 模块', link: '/guide/27-modules/' },
-            { text: '📚 包', link: '/guide/28-packages/' }
+            { text: '📦 模块', link: '/guide/28-modules/' },
+            { text: '📚 包', link: '/guide/29-packages/' }
           ]
         },
         {
           text: '10. 标准库',
           items: [
-            { text: '📚 标准库', link: '/guide/29-standard-library/' }
+            { text: '📚 标准库', link: '/guide/30-standard-library/' }
           ]
         },
         {
@@ -689,7 +689,7 @@ export default defineConfig({
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
             { text: '⬅️ 上一模块: 封装', link: '/guide/21-encapsulation/' },
-            { text: '➡️ 下一模块: 装饰器', link: '/guide/23-decorators/' }
+            { text: '➡️ 下一模块: 推导式', link: '/guide/23-comprehensions/' }
           ]
         },
         {
@@ -707,207 +707,231 @@ export default defineConfig({
           ]
         }
       ],
-      '/guide/23-decorators/': [
+      '/guide/23-comprehensions/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
             { text: '⬅️ 上一模块: 多态', link: '/guide/22-polymorphism/' },
-            { text: '➡️ 下一模块: 生成器', link: '/guide/24-generators/' }
+            { text: '➡️ 下一模块: 装饰器', link: '/guide/24-decorators/' }
+          ]
+        },
+        {
+          text: '📊 推导式',
+          items: [
+            { text: '📖 模块概述', link: '/guide/23-comprehensions/' },
+            { text: '📋 列表推导式', link: '/guide/23-comprehensions/01_list_comprehensions' },
+            { text: '🗂️ 字典推导式', link: '/guide/23-comprehensions/02_dict_comprehensions' },
+            { text: '🎯 集合推导式', link: '/guide/23-comprehensions/03_set_comprehensions' },
+            { text: '⚡ 生成器表达式', link: '/guide/23-comprehensions/04_generator_expressions' },
+            { text: '🏗️ 嵌套推导式', link: '/guide/23-comprehensions/05_nested_comprehensions' },
+            { text: '🔍 条件过滤', link: '/guide/23-comprehensions/06_conditional_filtering' },
+            { text: '⚡ 性能对比', link: '/guide/23-comprehensions/07_performance_comparison' },
+            { text: '💪 综合练习', link: '/guide/23-comprehensions/08_exercises' }
+          ]
+        }
+      ],
+      '/guide/24-decorators/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 推导式', link: '/guide/23-comprehensions/' },
+            { text: '➡️ 下一模块: 生成器', link: '/guide/25-generators/' }
           ]
         },
         {
           text: '🎨 装饰器',
           items: [
-            { text: '📖 模块概述', link: '/guide/23-decorators/' },
-            { text: '🎨 装饰器基础', link: '/guide/23-decorators/01_decorator_basics' },
-            { text: '🔧 函数装饰器', link: '/guide/23-decorators/02_function_decorators' },
-            { text: '🏗️ 类装饰器', link: '/guide/23-decorators/03_class_decorators' },
-            { text: '📊 带参数装饰器', link: '/guide/23-decorators/04_parameterized_decorators' },
-            { text: '🔄 装饰器链', link: '/guide/23-decorators/05_decorator_chains' },
-            { text: '🛠️ 内置装饰器', link: '/guide/23-decorators/06_built_in_decorators' },
-            { text: '💪 综合练习', link: '/guide/23-decorators/07_exercises' }
+            { text: '📖 模块概述', link: '/guide/24-decorators/' },
+            { text: '🎨 装饰器基础', link: '/guide/24-decorators/01_decorator_basics' },
+            { text: '🔧 函数装饰器', link: '/guide/24-decorators/02_function_decorators' },
+            { text: '🏗️ 类装饰器', link: '/guide/24-decorators/03_class_decorators' },
+            { text: '📊 带参数装饰器', link: '/guide/24-decorators/04_parameterized_decorators' },
+            { text: '🔄 装饰器链', link: '/guide/24-decorators/05_decorator_chains' },
+            { text: '🛠️ 内置装饰器', link: '/guide/24-decorators/06_built_in_decorators' },
+            { text: '💪 综合练习', link: '/guide/24-decorators/07_exercises' }
           ]
         }
       ],
-      '/guide/24-generators/': [
+      '/guide/25-generators/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 装饰器', link: '/guide/23-decorators/' },
-            { text: '➡️ 下一模块: 迭代器', link: '/guide/25-iterators/' }
+            { text: '⬅️ 上一模块: 装饰器', link: '/guide/24-decorators/' },
+            { text: '➡️ 下一模块: 迭代器', link: '/guide/26-iterators/' }
           ]
         },
         {
           text: '⚡ 生成器',
           items: [
-            { text: '📖 模块概述', link: '/guide/24-generators/' },
-            { text: '⚡ 生成器基础', link: '/guide/24-generators/01_generator_basics' },
-            { text: '🔄 yield关键字', link: '/guide/24-generators/02_yield_keyword' },
-            { text: '📊 生成器表达式', link: '/guide/24-generators/03_generator_expressions' },
-            { text: '🔧 生成器方法', link: '/guide/24-generators/04_generator_methods' },
-            { text: '🎯 生成器应用', link: '/guide/24-generators/05_generator_applications' },
-            { text: '💪 综合练习', link: '/guide/24-generators/06_exercises' }
+            { text: '📖 模块概述', link: '/guide/25-generators/' },
+            { text: '⚡ 生成器基础', link: '/guide/25-generators/01_generator_basics' },
+            { text: '🔄 yield关键字', link: '/guide/25-generators/02_yield_keyword' },
+            { text: '📊 生成器表达式', link: '/guide/25-generators/03_generator_expressions' },
+            { text: '🔧 生成器方法', link: '/guide/25-generators/04_generator_methods' },
+            { text: '🎯 生成器应用', link: '/guide/25-generators/05_generator_applications' },
+            { text: '💪 综合练习', link: '/guide/25-generators/06_exercises' }
           ]
         }
       ],
-      '/guide/25-iterators/': [
+      '/guide/26-iterators/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 生成器', link: '/guide/24-generators/' },
-            { text: '➡️ 下一模块: 上下文管理器', link: '/guide/26-context-managers/' }
+            { text: '⬅️ 上一模块: 生成器', link: '/guide/25-generators/' },
+            { text: '➡️ 下一模块: 上下文管理器', link: '/guide/27-context-managers/' }
           ]
         },
         {
           text: '🔄 迭代器',
           items: [
-            { text: '📖 模块概述', link: '/guide/25-iterators/' },
-            { text: '🔄 迭代器基础', link: '/guide/25-iterators/01_iterator_basics' },
-            { text: '🏗️ 自定义迭代器', link: '/guide/25-iterators/02_custom_iterators' },
-            { text: '🔧 迭代器协议', link: '/guide/25-iterators/03_iterator_protocol' },
-            { text: '📊 内置迭代器', link: '/guide/25-iterators/04_built_in_iterators' },
-            { text: '🎯 迭代器应用', link: '/guide/25-iterators/05_iterator_applications' },
-            { text: '💪 综合练习', link: '/guide/25-iterators/06_exercises' }
+            { text: '📖 模块概述', link: '/guide/26-iterators/' },
+            { text: '🔄 迭代器基础', link: '/guide/26-iterators/01_iterator_basics' },
+            { text: '🏗️ 自定义迭代器', link: '/guide/26-iterators/02_custom_iterators' },
+            { text: '🔧 迭代器协议', link: '/guide/26-iterators/03_iterator_protocol' },
+            { text: '📊 内置迭代器', link: '/guide/26-iterators/04_built_in_iterators' },
+            { text: '🎯 迭代器应用', link: '/guide/26-iterators/05_iterator_applications' },
+            { text: '💪 综合练习', link: '/guide/26-iterators/06_exercises' }
           ]
         }
       ],
-      '/guide/26-context-managers/': [
+      '/guide/27-context-managers/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 迭代器', link: '/guide/25-iterators/' },
-            { text: '➡️ 下一模块: 模块', link: '/guide/27-modules/' }
+            { text: '⬅️ 上一模块: 迭代器', link: '/guide/26-iterators/' },
+            { text: '➡️ 下一模块: 模块', link: '/guide/28-modules/' }
           ]
         },
         {
           text: '🎯 上下文管理器',
           items: [
-            { text: '📖 模块概述', link: '/guide/26-context-managers/' },
-            { text: '🎯 with语句', link: '/guide/26-context-managers/01_with_statement' },
-            { text: '🏗️ 自定义上下文管理器', link: '/guide/26-context-managers/02_custom_context_managers' },
-            { text: '🔧 contextlib模块', link: '/guide/26-context-managers/03_contextlib_module' },
-            { text: '📊 上下文管理器应用', link: '/guide/26-context-managers/04_context_manager_applications' },
-            { text: '💪 综合练习', link: '/guide/26-context-managers/05_exercises' }
+            { text: '📖 模块概述', link: '/guide/27-context-managers/' },
+            { text: '🎯 with语句', link: '/guide/27-context-managers/01_with_statement' },
+            { text: '🏗️ 自定义上下文管理器', link: '/guide/27-context-managers/02_custom_context_managers' },
+            { text: '🔧 contextlib模块', link: '/guide/27-context-managers/03_contextlib_module' },
+            { text: '📊 上下文管理器应用', link: '/guide/27-context-managers/04_context_manager_applications' },
+            { text: '💪 综合练习', link: '/guide/27-context-managers/05_exercises' }
           ]
         }
       ],
-      '/guide/27-modules/': [
+      '/guide/28-modules/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 上下文管理器', link: '/guide/26-context-managers/' },
-            { text: '➡️ 下一模块: 包', link: '/guide/28-packages/' }
+            { text: '⬅️ 上一模块: 上下文管理器', link: '/guide/27-context-managers/' },
+            { text: '➡️ 下一模块: 包', link: '/guide/29-packages/' }
           ]
         },
         {
           text: '📦 模块',
           items: [
-            { text: '📖 模块概述', link: '/guide/27-modules/' },
-            { text: '📦 模块基础', link: '/guide/27-modules/01_module_basics' },
-            { text: '📥 导入模块', link: '/guide/27-modules/02_importing_modules' },
-            { text: '🏗️ 创建模块', link: '/guide/27-modules/03_creating_modules' },
-            { text: '🔍 模块搜索路径', link: '/guide/27-modules/04_module_search_path' },
-            { text: '🎯 模块属性', link: '/guide/27-modules/05_module_attributes' },
-            { text: '🔄 重新加载模块', link: '/guide/27-modules/06_reloading_modules' },
-            { text: '💪 综合练习', link: '/guide/27-modules/07_exercises' }
+            { text: '📖 模块概述', link: '/guide/28-modules/' },
+            { text: '📦 模块基础', link: '/guide/28-modules/01_module_basics' },
+            { text: '📥 导入模块', link: '/guide/28-modules/02_importing_modules' },
+            { text: '🏗️ 创建模块', link: '/guide/28-modules/03_creating_modules' },
+            { text: '🔍 模块搜索路径', link: '/guide/28-modules/04_module_search_path' },
+            { text: '🎯 模块属性', link: '/guide/28-modules/05_module_attributes' },
+            { text: '🔄 重新加载模块', link: '/guide/28-modules/06_reloading_modules' },
+            { text: '💪 综合练习', link: '/guide/28-modules/07_exercises' }
           ]
         }
       ],
-      '/guide/28-packages/': [
+      '/guide/29-packages/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 模块', link: '/guide/27-modules/' },
-            { text: '➡️ 下一模块: 标准库', link: '/guide/29-standard-library/' }
+            { text: '⬅️ 上一模块: 模块', link: '/guide/28-modules/' },
+            { text: '➡️ 下一模块: 标准库', link: '/guide/30-standard-library/' }
           ]
         },
         {
           text: '📚 包',
           items: [
-            { text: '📖 模块概述', link: '/guide/28-packages/' },
-            { text: '📚 包基础', link: '/guide/28-packages/01_package_basics' },
-            { text: '🏗️ 创建包', link: '/guide/28-packages/02_creating_packages' },
-            { text: '📥 导入包', link: '/guide/28-packages/03_importing_packages' },
-            { text: '🔧 __init__.py文件', link: '/guide/28-packages/04_init_file' },
-            { text: '📦 子包', link: '/guide/28-packages/05_subpackages' },
-            { text: '🎯 相对导入', link: '/guide/28-packages/06_relative_imports' },
-            { text: '💪 综合练习', link: '/guide/28-packages/07_exercises' }
+            { text: '📖 模块概述', link: '/guide/29-packages/' },
+            { text: '📚 包基础', link: '/guide/29-packages/01_package_basics' },
+            { text: '🏗️ 创建包', link: '/guide/29-packages/02_creating_packages' },
+            { text: '📥 导入包', link: '/guide/29-packages/03_importing_packages' },
+            { text: '🔧 __init__.py文件', link: '/guide/29-packages/04_init_file' },
+            { text: '📦 子包', link: '/guide/29-packages/05_subpackages' },
+            { text: '🎯 相对导入', link: '/guide/29-packages/06_relative_imports' },
+            { text: '💪 综合练习', link: '/guide/29-packages/07_exercises' }
           ]
         }
       ],
-      '/guide/29-standard-library/': [
+      '/guide/30-standard-library/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 包', link: '/guide/28-packages/' },
-            { text: '➡️ 下一模块: 项目实战', link: '/guide/30-project-practice/' }
+            { text: '⬅️ 上一模块: 包', link: '/guide/29-packages/' },
+            { text: '➡️ 下一模块: 游戏项目', link: '/guide/30-games/' }
           ]
         },
         {
           text: '📚 标准库',
           items: [
-            { text: '📖 模块概述', link: '/guide/29-standard-library/' },
-            { text: '🕒 时间和日期', link: '/guide/29-standard-library/01_datetime' },
-            { text: '🔢 数学运算', link: '/guide/29-standard-library/02_math' },
-            { text: '🎲 随机数', link: '/guide/29-standard-library/03_random' },
-            { text: '💻 操作系统', link: '/guide/29-standard-library/04_os' },
-            { text: '🌐 网络请求', link: '/guide/29-standard-library/05_urllib' },
-            { text: '📊 数据处理', link: '/guide/29-standard-library/06_collections' },
-            { text: '🔍 正则表达式', link: '/guide/29-standard-library/07_re' },
-            { text: '💪 综合练习', link: '/guide/29-standard-library/08_exercises' }
+            { text: '📖 模块概述', link: '/guide/30-standard-library/' },
+            { text: '🕒 时间和日期', link: '/guide/30-standard-library/01_datetime' },
+            { text: '🔢 数学运算', link: '/guide/30-standard-library/02_math' },
+            { text: '🎲 随机数', link: '/guide/30-standard-library/03_random' },
+            { text: '💻 操作系统', link: '/guide/30-standard-library/04_os' },
+            { text: '🌐 网络请求', link: '/guide/30-standard-library/05_urllib' },
+            { text: '📊 数据处理', link: '/guide/30-standard-library/06_collections' },
+            { text: '🔍 正则表达式', link: '/guide/30-standard-library/07_re' },
+            { text: '💪 综合练习', link: '/guide/30-standard-library/08_exercises' }
           ]
         }
       ],
-      '/guide/30-project-practice/': [
+      '/guide/30-games/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 标准库', link: '/guide/29-standard-library/' },
-            { text: '➡️ 下一模块: 算法练习', link: '/guide/31-algorithms/' }
+            { text: '⬅️ 上一模块: 标准库', link: '/guide/30-standard-library/' },
+            { text: '➡️ 下一模块: 网络项目', link: '/guide/31-web-projects/' }
           ]
         },
         {
-          text: '🚀 项目实战',
+          text: '🎮 游戏项目',
           items: [
-            { text: '📖 模块概述', link: '/guide/30-project-practice/' },
-            { text: '📝 待办事项管理', link: '/guide/30-project-practice/01_todo_manager' },
-            { text: '📊 学生成绩管理', link: '/guide/30-project-practice/02_grade_manager' },
-            { text: '📚 图书管理系统', link: '/guide/30-project-practice/03_library_system' },
-            { text: '🎮 猜数字游戏', link: '/guide/30-project-practice/04_number_game' },
-            { text: '📈 数据分析工具', link: '/guide/30-project-practice/05_data_analyzer' },
-            { text: '🌐 网页爬虫', link: '/guide/30-project-practice/06_web_scraper' },
-            { text: '💪 综合项目', link: '/guide/30-project-practice/07_comprehensive_project' }
+            { text: '📖 模块概述', link: '/guide/30-games/' },
+            { text: '🎯 猜数字游戏', link: '/guide/30-games/01_number_guessing' },
+            { text: '🎲 掷骰子游戏', link: '/guide/30-games/02_dice_game' },
+            { text: '🃏 纸牌游戏', link: '/guide/30-games/03_card_game' },
+            { text: '🐍 贪吃蛇', link: '/guide/30-games/04_snake_game' },
+            { text: '⭕ 井字棋', link: '/guide/30-games/05_tic_tac_toe' },
+            { text: '🎮 文字冒险', link: '/guide/30-games/06_text_adventure' },
+            { text: '💪 综合游戏项目', link: '/guide/30-games/07_comprehensive_game' }
           ]
         }
       ],
-      '/guide/31-algorithms/': [
+      '/guide/31-web-projects/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 项目实战', link: '/guide/30-project-practice/' },
-            { text: '➡️ 下一模块: 编程挑战', link: '/guide/32-challenges/' }
+            { text: '⬅️ 上一模块: 游戏项目', link: '/guide/30-games/' },
+            { text: '➡️ 下一模块: 挑战项目', link: '/guide/32-challenges/' }
           ]
         },
         {
-          text: '🧮 算法练习',
+          text: '🌐 网络项目',
           items: [
-            { text: '📖 模块概述', link: '/guide/31-algorithms/' },
-            { text: '🔍 搜索算法', link: '/guide/31-algorithms/01_search_algorithms' },
-            { text: '📊 排序算法', link: '/guide/31-algorithms/02_sorting_algorithms' },
-            { text: '🔄 递归算法', link: '/guide/31-algorithms/03_recursive_algorithms' },
-            { text: '🌳 数据结构', link: '/guide/31-algorithms/04_data_structures' },
-            { text: '🎯 动态规划', link: '/guide/31-algorithms/05_dynamic_programming' },
-            { text: '📈 贪心算法', link: '/guide/31-algorithms/06_greedy_algorithms' },
-            { text: '💪 综合练习', link: '/guide/31-algorithms/07_exercises' }
+            { text: '📖 模块概述', link: '/guide/31-web-projects/' },
+            { text: '🌐 网页爬虫', link: '/guide/31-web-projects/01_web_scraper' },
+            { text: '📊 API调用', link: '/guide/31-web-projects/02_api_client' },
+            { text: '📧 邮件发送', link: '/guide/31-web-projects/03_email_sender' },
+            { text: '🌤️ 天气查询', link: '/guide/31-web-projects/04_weather_app' },
+            { text: '📰 新闻聚合', link: '/guide/31-web-projects/05_news_aggregator' },
+            { text: '🔗 URL缩短器', link: '/guide/31-web-projects/06_url_shortener' },
+            { text: '💪 综合网络项目', link: '/guide/31-web-projects/07_comprehensive_web' }
           ]
         }
       ],
@@ -916,22 +940,23 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 算法练习', link: '/guide/31-algorithms/' }
+            { text: '⬅️ 上一模块: 网络项目', link: '/guide/31-web-projects/' }
           ]
         },
         {
-          text: '🏆 编程挑战',
+          text: '🏆 挑战项目',
           items: [
             { text: '📖 模块概述', link: '/guide/32-challenges/' },
-            { text: '🥉 初级挑战', link: '/guide/32-challenges/01_beginner_challenges' },
-            { text: '🥈 中级挑战', link: '/guide/32-challenges/02_intermediate_challenges' },
-            { text: '🥇 高级挑战', link: '/guide/32-challenges/03_advanced_challenges' },
-            { text: '🎯 专题挑战', link: '/guide/32-challenges/04_special_challenges' },
-            { text: '🏆 竞赛题目', link: '/guide/32-challenges/05_contest_problems' },
-            { text: '💪 终极挑战', link: '/guide/32-challenges/06_ultimate_challenges' }
+            { text: '📝 待办事项管理', link: '/guide/32-challenges/01_todo_manager' },
+            { text: '📊 学生成绩管理', link: '/guide/32-challenges/02_grade_manager' },
+            { text: '📚 图书管理系统', link: '/guide/32-challenges/03_library_system' },
+            { text: '💰 个人财务管理', link: '/guide/32-challenges/04_finance_manager' },
+            { text: '📈 数据分析工具', link: '/guide/32-challenges/05_data_analyzer' },
+            { text: '🤖 聊天机器人', link: '/guide/32-challenges/06_chatbot' },
+            { text: '💪 终极挑战项目', link: '/guide/32-challenges/07_ultimate_project' }
           ]
         }
-      ]
+      ],
     },
     
     socialLinks: [

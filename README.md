@@ -43,10 +43,10 @@
 - [22. 多态](./22-polymorphism/README.md) - 多态概念和原理、鸭子类型、方法重写实现多态、抽象方法和抽象类、接口概念、运算符重载、多态设计模式
 
 ### 第七部分：高级特性
-- [23. 迭代器和生成器](./23-iterators-generators/README.md) - 迭代器和生成器的使用
-- [24. 列表推导式](./24-comprehensions/README.md) - 列表、字典、集合推导式
-- [25. 正则表达式](./25-regex/README.md) - 正则表达式的基本使用
-- [26. 日期时间](./26-datetime/README.md) - 日期时间处理
+- [23. 推导式](./23-comprehensions/README.md) - 列表推导式、字典推导式、集合推导式、生成器表达式、嵌套推导式、条件过滤、性能对比
+- [24. 生成器](./24-generators/README.md) - 生成器和迭代器的使用
+- [25. 装饰器](./25-decorators/README.md) - 装饰器的使用和应用
+- [26. 迭代器](./26-iterators/README.md) - 迭代器协议和自定义迭代器
 
 ### 第八部分：模块和包
 - [27. 模块](./27-modules/README.md) - 模块的导入和使用

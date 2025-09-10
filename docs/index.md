@@ -65,7 +65,7 @@ features:
 - [多态](/guide/22-polymorphism/) - 多态概念和原理、鸭子类型、方法重写实现多态、抽象方法和抽象类、接口概念、运算符重载、多态设计模式
 
 ### ⚡ 第七阶段：高级特性
-- [推导式](/guide/23-comprehensions/) - 简洁的数据处理
+- [推导式](/guide/23-comprehensions/) - 列表推导式、字典推导式、集合推导式、生成器表达式等简洁的数据处理方式
 - [生成器](/guide/24-generators/) - 内存高效的迭代
 - [装饰器](/guide/25-decorators/) - 功能增强技术
 - [迭代器](/guide/26-iterators/) - 自定义迭代行为

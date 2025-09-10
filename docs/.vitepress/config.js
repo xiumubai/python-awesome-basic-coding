@@ -96,6 +96,7 @@ export default defineConfig({
           text: '9. 模块和包',
           items: [
             { text: '📦 模块', link: '/guide/27-modules/' },
+            { text: '📦 包管理', link: '/guide/28-packages/' },
           ]
         },
       ],
@@ -803,6 +804,29 @@ export default defineConfig({
             { text: '🛠️ 工具模块', link: '/guide/27-modules/utils' },
             { text: '🧮 计算器模块', link: '/guide/27-modules/calculator' },
             { text: '⚙️ 配置模块', link: '/guide/27-modules/config' }
+          ]
+        }
+      ],
+      '/guide/28-packages/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 模块', link: '/guide/27-modules/' }
+          ]
+        },
+        {
+          text: '📦 包管理',
+          items: [
+            { text: '📖 模块概述', link: '/guide/28-packages/' },
+            { text: '📦 包的基础概念', link: '/guide/28-packages/01_package_basics' },
+            { text: '🔧 __init__.py文件', link: '/guide/28-packages/02_init_file' },
+            { text: '📥 包的导入机制', link: '/guide/28-packages/03_package_import' },
+            { text: '📁 子包管理', link: '/guide/28-packages/04_subpackages' },
+            { text: '🔄 相对和绝对导入', link: '/guide/28-packages/05_relative_absolute_import' },
+            { text: '⚙️ 包的初始化', link: '/guide/28-packages/06_package_initialization' },
+            { text: '🌐 命名空间包', link: '/guide/28-packages/07_namespace_packages' },
+            { text: '💪 综合练习', link: '/guide/28-packages/08_exercises' }
           ]
         }
       ],

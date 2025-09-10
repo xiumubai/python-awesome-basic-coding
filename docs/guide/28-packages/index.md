@@ -10,7 +10,7 @@
 
 ## 学习文件详解
 
-### 01_package_basics.py - 包的基本概念和结构
+### [01_package_basics.py](./01_package_basics.md) - 包的基本概念和结构
 
 **学习内容描述：**
 - 包的基本概念和定义
@@ -26,18 +26,7 @@
 - 包的命名空间概念
 - 包的搜索路径机制
 
-**运行方式：**
-```bash
-python3 01_package_basics.py
-```
-
-**学习建议：**
-- 仔细观察包的目录结构创建过程
-- 理解包与普通目录的区别
-- 实践创建自己的包结构
-- 注意包命名的规范性
-
-### 02_init_file.py - __init__.py文件的作用和使用
+### [02_init_file.py](./02_init_file.md) - __init__.py文件的作用和使用
 
 **学习内容描述：**
 - `__init__.py`文件的作用和重要性
@@ -53,18 +42,7 @@ python3 01_package_basics.py
 - 包级别的文档字符串和元数据
 - 子模块的自动导入配置
 
-**运行方式：**
-```bash
-python3 02_init_file.py
-```
-
-**学习建议：**
-- 对比有无`__init__.py`文件的区别
-- 实验不同的`__init__.py`内容
-- 理解包初始化的执行时机
-- 掌握`__all__`的正确使用方法
-
-### 03_package_import.py - 包的导入和使用方法
+### [03_package_import.py](./03_package_import.md) - 包的导入和使用方法
 
 **学习内容描述：**
 - 包的各种导入方式和语法
@@ -80,18 +58,7 @@ python3 02_init_file.py
 - 循环导入问题的避免
 - 导入性能优化技巧
 
-**运行方式：**
-```bash
-python3 03_package_import.py
-```
-
-**学习建议：**
-- 练习各种导入语法的使用
-- 理解导入路径的查找顺序
-- 注意避免循环导入问题
-- 学会使用导入别名提高代码可读性
-
-### 04_subpackages.py - 子包的创建和管理
+### [04_subpackages.py](./04_subpackages.md) - 子包的创建和管理
 
 **学习内容描述：**
 - 子包的概念和层次结构
@@ -107,18 +74,7 @@ python3 03_package_import.py
 - 包结构的扩展性考虑
 - 大型项目的包组织策略
 
-**运行方式：**
-```bash
-python3 04_subpackages.py
-```
-
-**学习建议：**
-- 设计合理的包层次结构
-- 理解子包的独立性和关联性
-- 练习复杂包结构的创建
-- 学习大型项目的包组织经验
-
-### 05_relative_absolute_import.py - 相对导入和绝对导入
+### [05_relative_absolute_import.py](./05_relative_absolute_import.md) - 相对导入和绝对导入
 
 **学习内容描述：**
 - 相对导入和绝对导入的概念
@@ -134,18 +90,7 @@ python3 04_subpackages.py
 - `__name__`和`__package__`的作用
 - 导入问题的调试技巧
 
-**运行方式：**
-```bash
-python3 05_relative_absolute_import.py
-```
-
-**学习建议：**
-- 理解两种导入方式的适用场景
-- 掌握相对导入的语法规则
-- 学会选择合适的导入方式
-- 练习解决常见的导入问题
-
-### 06_package_initialization.py - 包的初始化过程
+### [06_package_initialization.py](./06_package_initialization.md) - 包的初始化过程
 
 **学习内容描述：**
 - 包初始化的详细过程和机制
@@ -161,18 +106,7 @@ python3 05_relative_absolute_import.py
 - 初始化失败的处理机制
 - 包状态的持久化管理
 
-**运行方式：**
-```bash
-python3 06_package_initialization.py
-```
-
-**学习建议：**
-- 观察包初始化的执行过程
-- 理解包缓存机制的作用
-- 学会控制包的初始化行为
-- 掌握包状态管理的技巧
-
-### 07_namespace_packages.py - 命名空间包
+### [07_namespace_packages.py](./07_namespace_packages.md) - 命名空间包
 
 **学习内容描述：**
 - 命名空间包的概念和特点
@@ -188,18 +122,7 @@ python3 06_package_initialization.py
 - 包路径的动态发现
 - 企业级应用的包管理策略
 
-**运行方式：**
-```bash
-python3 07_namespace_packages.py
-```
-
-**学习建议：**
-- 理解命名空间包的设计理念
-- 实践分布式包的创建
-- 学习企业级包管理经验
-- 掌握包发现机制的原理
-
-### 08_exercises.py - 综合练习
+### [08_exercises.py](./08_exercises.md) - 综合练习
 
 **学习内容描述：**
 - 包管理知识点的综合应用
@@ -215,34 +138,23 @@ python3 07_namespace_packages.py
 - 大型项目的包组织经验
 - 包的测试和维护策略
 
-**运行方式：**
-```bash
-python3 08_exercises.py
-```
-
-**学习建议：**
-- 完成所有练习任务
-- 分析练习中的设计思路
-- 总结包管理的经验教训
-- 应用到实际项目中
-
 ## 学习路径建议
 
 ### 初学者路径
-1. **基础概念** → 01_package_basics.py
-2. **初始化文件** → 02_init_file.py
-3. **导入方法** → 03_package_import.py
-4. **综合练习** → 08_exercises.py
+1. **基础概念** → [01_package_basics.py](./01_package_basics.md)
+2. **初始化文件** → [02_init_file.py](./02_init_file.md)
+3. **导入方法** → [03_package_import.py](./03_package_import.md)
+4. **综合练习** → [08_exercises.py](./08_exercises.md)
 
 ### 进阶学习路径
-1. **子包管理** → 04_subpackages.py
-2. **导入机制** → 05_relative_absolute_import.py
-3. **初始化过程** → 06_package_initialization.py
-4. **命名空间包** → 07_namespace_packages.py
+1. **子包管理** → [04_subpackages.py](./04_subpackages.md)
+2. **导入机制** → [05_relative_absolute_import.py](./05_relative_absolute_import.md)
+3. **初始化过程** → [06_package_initialization.py](./06_package_initialization.md)
+4. **命名空间包** → [07_namespace_packages.py](./07_namespace_packages.md)
 
 ### 实践应用路径
 1. 完成所有基础学习文件
-2. 深入研究08_exercises.py中的练习
+2. 深入研究[08_exercises.py](./08_exercises.md)中的练习
 3. 设计自己的包结构项目
 4. 应用到实际开发中
 

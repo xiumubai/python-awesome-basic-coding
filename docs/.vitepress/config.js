@@ -87,8 +87,8 @@ export default defineConfig({
         {
           text: '8. 高级特性',
           items: [
-            { text: '🎯 装饰器', link: '/guide/24-decorators/' },
-            { text: '⚡ 生成器', link: '/guide/25-generators/' },
+            { text: '⚡ 生成器', link: '/guide/24-generators/' },
+            { text: '🎯 装饰器', link: '/guide/25-decorators/' },
             { text: '🔄 迭代器', link: '/guide/26-iterators/' },
             { text: '🎪 上下文管理器', link: '/guide/27-context-managers/' }
           ]
@@ -713,7 +713,7 @@ export default defineConfig({
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
             { text: '⬅️ 上一模块: 多态', link: '/guide/22-polymorphism/' },
-            { text: '➡️ 下一模块: 装饰器', link: '/guide/24-decorators/' }
+            { text: '➡️ 下一模块: 生成器', link: '/guide/24-generators/' }
           ]
         },
         {
@@ -731,13 +731,38 @@ export default defineConfig({
           ]
         }
       ],
-      '/guide/24-decorators/': [
+
+      '/guide/24-generators/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
             { text: '⬅️ 上一模块: 推导式', link: '/guide/23-comprehensions/' },
-            { text: '➡️ 下一模块: 生成器', link: '/guide/25-generators/' }
+            { text: '➡️ 下一模块: 装饰器', link: '/guide/25-decorators/' }
+          ]
+        },
+        {
+          text: '⚡ 生成器',
+          items: [
+            { text: '📖 模块概述', link: '/guide/24-generators/' },
+            { text: '🔰 生成器基础', link: '/guide/24-generators/01_generator_basics' },
+            { text: '🔧 生成器函数', link: '/guide/24-generators/02_generator_functions' },
+            { text: '📊 生成器表达式', link: '/guide/24-generators/03_generator_expressions' },
+            { text: '💾 状态保持', link: '/guide/24-generators/04_generator_state' },
+            { text: '⚙️ 生成器方法', link: '/guide/24-generators/05_generator_methods' },
+            { text: '🔄 协程应用', link: '/guide/24-generators/06_generator_coroutines' },
+            { text: '⚡ 内存效率', link: '/guide/24-generators/07_memory_efficiency' },
+            { text: '💪 综合练习', link: '/guide/24-generators/08_exercises' }
+          ]
+        }
+      ],
+      '/guide/25-decorators/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '➡️ 下一模块: 生成器', link: '/guide/24-generators/' },
+            { text: '⬅️ 上一模块: 迭代器', link: '/guide/26-iterators/' },
           ]
         },
         {
@@ -754,34 +779,12 @@ export default defineConfig({
           ]
         }
       ],
-      '/guide/25-generators/': [
-        {
-          text: '🧭 快速导航',
-          items: [
-            { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 装饰器', link: '/guide/24-decorators/' },
-            { text: '➡️ 下一模块: 迭代器', link: '/guide/26-iterators/' }
-          ]
-        },
-        {
-          text: '⚡ 生成器',
-          items: [
-            { text: '📖 模块概述', link: '/guide/25-generators/' },
-            { text: '⚡ 生成器基础', link: '/guide/25-generators/01_generator_basics' },
-            { text: '🔄 yield关键字', link: '/guide/25-generators/02_yield_keyword' },
-            { text: '📊 生成器表达式', link: '/guide/25-generators/03_generator_expressions' },
-            { text: '🔧 生成器方法', link: '/guide/25-generators/04_generator_methods' },
-            { text: '🎯 生成器应用', link: '/guide/25-generators/05_generator_applications' },
-            { text: '💪 综合练习', link: '/guide/25-generators/06_exercises' }
-          ]
-        }
-      ],
       '/guide/26-iterators/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 生成器', link: '/guide/25-generators/' },
+            { text: '⬅️ 上一模块: 生成器', link: '/guide/24-generators/' },
             { text: '➡️ 下一模块: 上下文管理器', link: '/guide/27-context-managers/' }
           ]
         },

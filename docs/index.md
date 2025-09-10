@@ -66,7 +66,7 @@ features:
 
 ### ⚡ 第七阶段：高级特性
 - [推导式](/guide/23-comprehensions/) - 列表推导式、字典推导式、集合推导式、生成器表达式等简洁的数据处理方式
-- [生成器](/guide/24-generators/) - 内存高效的迭代
+- [生成器](/guide/24-generators/) - 生成器基础、生成器函数、生成器表达式、状态保持、协程应用、内存效率优化
 - [装饰器](/guide/25-decorators/) - 功能增强技术
 - [迭代器](/guide/26-iterators/) - 自定义迭代行为
 

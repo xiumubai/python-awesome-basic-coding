@@ -121,7 +121,7 @@
 - ✅ 21-encapsulation
 - ✅ 22-polymorphism
 - 23-comprehensions
-- 24-generators
+- ✅ 24-generators
 - 25-decorators
 - 26-iterators
 - 27-modules

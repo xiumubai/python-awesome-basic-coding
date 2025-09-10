@@ -181,6 +181,30 @@
 
 </div>
 
+### 📦 模块和包
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0;">
+
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">📦 <a href="./27-modules/" style="color: inherit; text-decoration: none;">模块</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">学习模块基础概念、导入语句、搜索路径、__name__变量、模块重载和文档等代码组织技术</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
+</div>
+
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">📚 <a href="./28-packages/" style="color: inherit; text-decoration: none;">包</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">掌握包的创建和管理，大型项目的代码组织结构</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #dc3545;">🔄 待完成</div>
+</div>
+
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🛠️ <a href="./29-standard-library/" style="color: inherit; text-decoration: none;">标准库</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">探索Python丰富的标准库，提高开发效率</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #dc3545;">🔄 待完成</div>
+</div>
+
+</div>
+
 ## 🚀 开始学习
 
 准备好了吗？让我们从 **[📊 变量和数据类型](./01-variables-and-types/)** 开始你的Python编程之旅！

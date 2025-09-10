@@ -49,7 +49,7 @@
 - [26. 迭代器](./26-iterators/README.md) - 迭代器协议、自定义迭代器、iter()和next()函数、StopIteration异常、惰性求值、itertools模块、迭代器vs生成器对比
 
 ### 第八部分：模块和包
-- [27. 模块](./27-modules/README.md) - 模块的导入和使用
+- [27. 模块](./27-modules/README.md) - 模块基础概念、导入语句、搜索路径、__name__变量、模块重载和文档
 - [28. 包](./28-packages/README.md) - 包的创建和管理
 - [29. 标准库](./29-standard-library/README.md) - 常用标准库介绍
 
@@ -127,7 +127,7 @@
 - ✅ 24-generators
 - ✅ 25-decorators
 - ✅ 26-iterators
-- 27-modules
+- ✅ 27-modules
 - 28-packages
 - 29-standard-library
 - 30-mini-projects

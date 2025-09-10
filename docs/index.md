@@ -68,7 +68,7 @@ features:
 - [推导式](/guide/23-comprehensions/) - 列表推导式、字典推导式、集合推导式、生成器表达式等简洁的数据处理方式
 - [生成器](/guide/24-generators/) - 生成器基础、生成器函数、生成器表达式、状态保持、协程应用、内存效率优化
 - [装饰器](/guide/25-decorators/) - 装饰器基础、函数装饰器、带参数装饰器、类装饰器、嵌套装饰器、functools.wraps、内置装饰器等功能增强技术
-- [迭代器](/guide/26-iterators/) - 自定义迭代行为
+- [迭代器](/guide/26-iterators/) - 迭代器协议、自定义迭代器、iter()和next()函数、StopIteration异常、惰性求值、itertools模块、迭代器vs生成器对比
 
 ### 📦 第八阶段：模块和库
 - [模块](/guide/27-modules/) - 代码组织和复用

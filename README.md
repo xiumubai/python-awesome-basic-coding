@@ -46,7 +46,7 @@
 - [23. 推导式](./23-comprehensions/README.md) - 列表推导式、字典推导式、集合推导式、生成器表达式、嵌套推导式、条件过滤、性能对比
 - [24. 生成器](./24-generators/README.md) - 生成器和迭代器的使用
 - [25. 装饰器](docs/guide/25-decorators/) - 装饰器基础概念、函数装饰器、带参数装饰器、类装饰器、嵌套装饰器、functools.wraps、内置装饰器和综合练习
-- [26. 迭代器](./26-iterators/README.md) - 迭代器协议和自定义迭代器
+- [26. 迭代器](./26-iterators/README.md) - 迭代器协议、自定义迭代器、iter()和next()函数、StopIteration异常、惰性求值、itertools模块、迭代器vs生成器对比
 
 ### 第八部分：模块和包
 - [27. 模块](./27-modules/README.md) - 模块的导入和使用
@@ -126,7 +126,7 @@
 - ✅23-comprehensions
 - ✅ 24-generators
 - ✅ 25-decorators
-- 26-iterators
+- ✅ 26-iterators
 - 27-modules
 - 28-packages
 - 29-standard-library

@@ -785,7 +785,7 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 生成器', link: '/guide/24-generators/' },
+            { text: '⬅️ 上一模块: 装饰器', link: '/guide/25-decorators/' },
             { text: '➡️ 下一模块: 上下文管理器', link: '/guide/27-context-managers/' }
           ]
         },
@@ -795,10 +795,12 @@ export default defineConfig({
             { text: '📖 模块概述', link: '/guide/26-iterators/' },
             { text: '🔄 迭代器基础', link: '/guide/26-iterators/01_iterator_basics' },
             { text: '🏗️ 自定义迭代器', link: '/guide/26-iterators/02_custom_iterators' },
-            { text: '🔧 迭代器协议', link: '/guide/26-iterators/03_iterator_protocol' },
-            { text: '📊 内置迭代器', link: '/guide/26-iterators/04_built_in_iterators' },
-            { text: '🎯 迭代器应用', link: '/guide/26-iterators/05_iterator_applications' },
-            { text: '💪 综合练习', link: '/guide/26-iterators/06_exercises' }
+            { text: '🔧 iter()和next()函数', link: '/guide/26-iterators/03_iter_next_functions' },
+            { text: '⚠️ StopIteration异常', link: '/guide/26-iterators/04_stopiteration' },
+            { text: '💤 惰性求值', link: '/guide/26-iterators/05_lazy_evaluation' },
+            { text: '🛠️ itertools模块', link: '/guide/26-iterators/06_itertools_module' },
+            { text: '⚖️ 迭代器vs生成器', link: '/guide/26-iterators/07_iterator_vs_generator' },
+            { text: '💪 综合练习', link: '/guide/26-iterators/08_exercises' }
           ]
         }
       ],
@@ -964,7 +966,7 @@ export default defineConfig({
     },
     
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-repo/python-awesome-basic-coding' }
+      { icon: 'github', link: 'https://github.com/xiumubai/python-awesome-basic-coding' }
     ],
     
     footer: {

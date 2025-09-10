@@ -173,6 +173,12 @@
   <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
 </div>
 
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🔄 <a href="./26-iterators/" style="color: inherit; text-decoration: none;">迭代器</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">深入学习迭代器技术：迭代器协议、自定义迭代器、iter()和next()函数、StopIteration异常、惰性求值、itertools模块、迭代器vs生成器对比等</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
+</div>
+
 </div>
 
 ## 🚀 开始学习

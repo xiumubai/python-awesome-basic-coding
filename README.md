@@ -40,7 +40,7 @@
 - [19. 类和对象](./19-classes-objects/README.md) - 类的定义、对象创建、实例方法、属性操作、构造方法、私有属性、类属性等面向对象编程基础
 - [20. 继承](./20-inheritance/README.md) - 基础继承、方法重写、super()函数、多重继承、MRO、抽象基类、组合vs继承等继承相关概念
 - [21. 封装](./21-encapsulation/README.md) - 封装基础概念、访问控制、属性装饰器、getter/setter方法、名称修饰、数据隐藏、数据验证和保护等封装核心技术
-- [22. 特殊方法](./22-special-methods/README.md) - 魔术方法的使用
+- [22. 多态](./22-polymorphism/README.md) - 多态概念和原理、鸭子类型、方法重写实现多态、抽象方法和抽象类、接口概念、运算符重载、多态设计模式
 
 ### 第七部分：高级特性
 - [23. 迭代器和生成器](./23-iterators-generators/README.md) - 迭代器和生成器的使用
@@ -119,7 +119,7 @@
 - 18-exception-handling
 - 20-inheritance
 - ✅ 21-encapsulation
-- 22-polymorphism
+- ✅ 22-polymorphism
 - 23-comprehensions
 - 24-generators
 - 25-decorators

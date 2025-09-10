@@ -62,7 +62,7 @@ features:
 - [类和对象](/guide/19-classes-objects/) - 类的定义、对象创建、实例方法、属性操作、构造方法、私有属性、类属性等面向对象编程基础
 - [继承](/guide/20-inheritance/) - 基础继承、方法重写、super()函数、多重继承、MRO、抽象基类、组合vs继承等继承相关概念
 - [封装](/guide/21-encapsulation/) - 封装基础概念、访问控制、属性装饰器、getter/setter方法、名称修饰、数据隐藏、数据验证和保护等封装核心技术
-- [多态](/guide/22-polymorphism/) - 灵活的对象行为
+- [多态](/guide/22-polymorphism/) - 多态概念和原理、鸭子类型、方法重写实现多态、抽象方法和抽象类、接口概念、运算符重载、多态设计模式
 
 ### ⚡ 第七阶段：高级特性
 - [推导式](/guide/23-comprehensions/) - 简洁的数据处理

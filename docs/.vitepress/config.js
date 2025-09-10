@@ -696,12 +696,14 @@ export default defineConfig({
           text: '🎭 多态',
           items: [
             { text: '📖 模块概述', link: '/guide/22-polymorphism/' },
-            { text: '🎭 多态基础', link: '/guide/22-polymorphism/01_polymorphism_basics' },
-            { text: '🔄 方法重载', link: '/guide/22-polymorphism/02_method_overloading' },
-            { text: '🎯 鸭子类型', link: '/guide/22-polymorphism/03_duck_typing' },
-            { text: '🔧 抽象基类', link: '/guide/22-polymorphism/04_abstract_base_classes' },
-            { text: '🎨 接口设计', link: '/guide/22-polymorphism/05_interface_design' },
-            { text: '💪 综合练习', link: '/guide/22-polymorphism/06_exercises' }
+            { text: '🎭 多态基础', link: '/guide/22-polymorphism/01_basic_polymorphism' },
+            { text: '🦆 鸭子类型', link: '/guide/22-polymorphism/02_duck_typing' },
+            { text: '🔄 方法重写', link: '/guide/22-polymorphism/03_method_overriding' },
+            { text: '🏗️ 抽象类', link: '/guide/22-polymorphism/04_abstract_classes' },
+            { text: '🔧 接口概念', link: '/guide/22-polymorphism/05_interfaces' },
+            { text: '⚙️ 运算符重载', link: '/guide/22-polymorphism/06_operator_overloading' },
+            { text: '🎯 设计模式', link: '/guide/22-polymorphism/07_design_patterns' },
+            { text: '💪 综合练习', link: '/guide/22-polymorphism/08_exercises' }
           ]
         }
       ],

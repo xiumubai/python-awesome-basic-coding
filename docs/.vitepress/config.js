@@ -761,21 +761,22 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '➡️ 下一模块: 生成器', link: '/guide/24-generators/' },
-            { text: '⬅️ 上一模块: 迭代器', link: '/guide/26-iterators/' },
+            { text: '⬅️ 上一模块: 生成器', link: '/guide/24-generators/' },
+            { text: '➡️ 下一模块: 迭代器', link: '/guide/26-iterators/' }
           ]
         },
         {
           text: '🎨 装饰器',
           items: [
-            { text: '📖 模块概述', link: '/guide/24-decorators/' },
-            { text: '🎨 装饰器基础', link: '/guide/24-decorators/01_decorator_basics' },
-            { text: '🔧 函数装饰器', link: '/guide/24-decorators/02_function_decorators' },
-            { text: '🏗️ 类装饰器', link: '/guide/24-decorators/03_class_decorators' },
-            { text: '📊 带参数装饰器', link: '/guide/24-decorators/04_parameterized_decorators' },
-            { text: '🔄 装饰器链', link: '/guide/24-decorators/05_decorator_chains' },
-            { text: '🛠️ 内置装饰器', link: '/guide/24-decorators/06_built_in_decorators' },
-            { text: '💪 综合练习', link: '/guide/24-decorators/07_exercises' }
+            { text: '📖 模块概述', link: '/guide/25-decorators/' },
+             { text: '🎨 装饰器基础', link: '/guide/25-decorators/01_decorator_basics' },
+             { text: '🔧 函数装饰器', link: '/guide/25-decorators/02_function_decorators' },
+             { text: '📊 带参数装饰器', link: '/guide/25-decorators/03_decorators_with_args' },
+             { text: '🏗️ 类装饰器', link: '/guide/25-decorators/04_class_decorators' },
+             { text: '🔄 嵌套装饰器', link: '/guide/25-decorators/05_nested_decorators' },
+             { text: '🛠️ functools.wraps', link: '/guide/25-decorators/06_functools_wraps' },
+             { text: '🎯 内置装饰器', link: '/guide/25-decorators/07_builtin_decorators' },
+             { text: '💪 综合练习', link: '/guide/25-decorators/08_exercises' }
           ]
         }
       ],

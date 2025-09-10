@@ -45,7 +45,7 @@
 ### 第七部分：高级特性
 - [23. 推导式](./23-comprehensions/README.md) - 列表推导式、字典推导式、集合推导式、生成器表达式、嵌套推导式、条件过滤、性能对比
 - [24. 生成器](./24-generators/README.md) - 生成器和迭代器的使用
-- [25. 装饰器](./25-decorators/README.md) - 装饰器的使用和应用
+- [25. 装饰器](docs/guide/25-decorators/) - 装饰器基础概念、函数装饰器、带参数装饰器、类装饰器、嵌套装饰器、functools.wraps、内置装饰器和综合练习
 - [26. 迭代器](./26-iterators/README.md) - 迭代器协议和自定义迭代器
 
 ### 第八部分：模块和包
@@ -102,27 +102,30 @@
 
 ``` markdown
 根据项目结构，以下模块需要按此流程更新：
-
-- 05-conditions
-- 06-loops
-- 07-loop-control
-- 08-lists
-- 09-tuples
-- 10-dictionaries
-- 11-sets
-- 12-strings
-- 13-basic-functions
-- 14-parameters
-- 15-scope
-- 16-lambda
-- 17-file-operations
-- 18-exception-handling
-- 20-inheritance
+- ✅01-variables-and-types
+- ✅02-operators
+- ✅03-input-output
+- ✅04-comments
+- ✅05-conditions
+- ✅06-loops
+- ✅07-loop-control
+- ✅08-lists
+- ✅09-tuples
+- ✅10-dictionaries
+- ✅11-sets
+- ✅12-strings
+- ✅13-basic-functions
+- ✅14-parameters
+- ✅15-scope
+- ✅16-lambda
+- ✅17-file-operations
+- ✅18-exception-handling
+- ✅20-inheritance
 - ✅ 21-encapsulation
 - ✅ 22-polymorphism
-- 23-comprehensions
+- ✅23-comprehensions
 - ✅ 24-generators
-- 25-decorators
+- ✅ 25-decorators
 - 26-iterators
 - 27-modules
 - 28-packages

@@ -21,7 +21,7 @@
 
 3. **生成对应的文档网站**：
    - 在docs/guide/目录下创建对应的模块文档目录
-   - 内容结构与01-variables-and-types目录保持一致
+   - 内容结构与01-variables-and-types目录结构保持一致
    - 将README.md内容转换为index.md作为模块总说明文档，除了index.md文件，其他文件需要按照序号排列，01_xxx.md, 02_xxx.md, ...
    - 为每个Python文件创建对应的markdown文档页面，文件命名格式：01_xxx.md, 02_xxx.md, ...
    - 每个文档页面包含：

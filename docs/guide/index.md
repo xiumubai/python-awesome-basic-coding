@@ -167,6 +167,12 @@
   <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
 </div>
 
+<div style="padding: 15px; border: 1px solid #e1e5e9; border-radius: 8px; background: #f8fafc;">
+  <h4 style="margin: 0 0 10px 0; color: #0366d6;">🎯 <a href="./25-decorators/" style="color: inherit; text-decoration: none;">装饰器</a></h4>
+  <p style="margin: 0; font-size: 14px; color: #666;">掌握装饰器技术：装饰器基础概念、函数装饰器、带参数装饰器、类装饰器、嵌套装饰器、functools.wraps、内置装饰器等功能增强技术</p>
+  <div style="margin-top: 8px; font-size: 12px; color: #28a745;">✅ 已完成文档</div>
+</div>
+
 </div>
 
 ## 🚀 开始学习

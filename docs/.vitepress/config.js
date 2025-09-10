@@ -79,9 +79,9 @@ export default defineConfig({
           items: [
             { text: '🏗️ 类和对象', link: '/guide/19-classes-objects/' },
             { text: '🧬 继承', link: '/guide/20-inheritance/' },
-            { text: '🔄 多态', link: '/guide/21-polymorphism/' },
-            { text: '📦 封装', link: '/guide/22-encapsulation/' },
-            { text: '🎯 特殊方法', link: '/guide/23-special-methods/' }
+            { text: '🧬 封装', link: '/guide/21-encapsulation/' },
+            { text: '🔄 多态', link: '/guide/22-polymorphism/' },
+            { text: '🎯 特殊方法', link: '/guide/24-special-methods/' }
           ]
         },
         {
@@ -641,7 +641,7 @@ export default defineConfig({
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
             { text: '⬅️ 上一模块: 类和对象', link: '/guide/19-classes-objects/' },
-            { text: '➡️ 下一模块: 多态', link: '/guide/21-polymorphism/' }
+            { text: '➡️ 下一模块: 封装', link: '/guide/21-encapsulation/' }
           ]
         },
         {
@@ -659,47 +659,49 @@ export default defineConfig({
           ]
         }
       ],
-      '/guide/21-polymorphism/': [
+      '/guide/21-encapsulation/': [
         {
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
             { text: '⬅️ 上一模块: 继承', link: '/guide/20-inheritance/' },
-            { text: '➡️ 下一模块: 封装', link: '/guide/22-encapsulation/' }
-          ]
-        },
-        {
-          text: '🎭 多态',
-          items: [
-            { text: '📖 模块概述', link: '/guide/21-polymorphism/' },
-            { text: '🎭 多态基础', link: '/guide/21-polymorphism/01_polymorphism_basics' },
-            { text: '🔄 方法重载', link: '/guide/21-polymorphism/02_method_overloading' },
-            { text: '🎯 鸭子类型', link: '/guide/21-polymorphism/03_duck_typing' },
-            { text: '🔧 抽象基类', link: '/guide/21-polymorphism/04_abstract_base_classes' },
-            { text: '🎨 接口设计', link: '/guide/21-polymorphism/05_interface_design' },
-            { text: '💪 综合练习', link: '/guide/21-polymorphism/06_exercises' }
-          ]
-        }
-      ],
-      '/guide/22-encapsulation/': [
-        {
-          text: '🧭 快速导航',
-          items: [
-            { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 多态', link: '/guide/21-polymorphism/' },
-            { text: '➡️ 下一模块: 装饰器', link: '/guide/23-decorators/' }
+            { text: '➡️ 下一模块: 多态', link: '/guide/22-polymorphism/' }
           ]
         },
         {
           text: '🔒 封装',
           items: [
-            { text: '📖 模块概述', link: '/guide/22-encapsulation/' },
-            { text: '🔒 访问控制', link: '/guide/22-encapsulation/01_access_control' },
-            { text: '🏷️ 属性装饰器', link: '/guide/22-encapsulation/02_property_decorator' },
-            { text: '🔧 getter和setter', link: '/guide/22-encapsulation/03_getter_setter' },
-            { text: '🛡️ 数据保护', link: '/guide/22-encapsulation/04_data_protection' },
-            { text: '🎯 接口设计', link: '/guide/22-encapsulation/05_interface_design' },
-            { text: '💪 综合练习', link: '/guide/22-encapsulation/06_exercises' }
+            { text: '📖 模块概述', link: '/guide/21-encapsulation/' },
+            { text: '🔒 封装基础', link: '/guide/21-encapsulation/01_basic_encapsulation' },
+            { text: '🛡️ 访问控制', link: '/guide/21-encapsulation/02_access_control' },
+            { text: '🏷️ 属性装饰器', link: '/guide/21-encapsulation/03_property_decorator' },
+            { text: '🔧 getter和setter', link: '/guide/21-encapsulation/04_getter_setter' },
+            { text: '🎭 名称修饰', link: '/guide/21-encapsulation/05_name_mangling' },
+            { text: '🔐 数据隐藏', link: '/guide/21-encapsulation/06_data_hiding' },
+            { text: '✅ 数据验证', link: '/guide/21-encapsulation/07_validation' },
+            { text: '💪 综合练习', link: '/guide/21-encapsulation/08_exercises' }
+          ]
+        }
+      ],
+      '/guide/22-polymorphism/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 封装', link: '/guide/21-encapsulation/' },
+            { text: '➡️ 下一模块: 装饰器', link: '/guide/23-decorators/' }
+          ]
+        },
+        {
+          text: '🎭 多态',
+          items: [
+            { text: '📖 模块概述', link: '/guide/22-polymorphism/' },
+            { text: '🎭 多态基础', link: '/guide/22-polymorphism/01_polymorphism_basics' },
+            { text: '🔄 方法重载', link: '/guide/22-polymorphism/02_method_overloading' },
+            { text: '🎯 鸭子类型', link: '/guide/22-polymorphism/03_duck_typing' },
+            { text: '🔧 抽象基类', link: '/guide/22-polymorphism/04_abstract_base_classes' },
+            { text: '🎨 接口设计', link: '/guide/22-polymorphism/05_interface_design' },
+            { text: '💪 综合练习', link: '/guide/22-polymorphism/06_exercises' }
           ]
         }
       ],
@@ -708,7 +710,7 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 封装', link: '/guide/22-encapsulation/' },
+            { text: '⬅️ 上一模块: 多态', link: '/guide/22-polymorphism/' },
             { text: '➡️ 下一模块: 生成器', link: '/guide/24-generators/' }
           ]
         },

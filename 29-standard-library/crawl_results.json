@@ -1,0 +1,49 @@
+{
+  "stats": {
+    "total_requests": 3,
+    "successful_requests": 3,
+    "failed_requests": 0,
+    "total_links_found": 55
+  },
+  "pages": [
+    {
+      "url": "https://example.com/page1",
+      "title": "Python编程教程",
+      "content_length": 5420,
+      "text_length": 3200,
+      "links_count": 15,
+      "links": [
+        "https://example.com/tutorial1",
+        "https://example.com/tutorial2"
+      ],
+      "crawl_time": "2025-09-11T10:28:28.430460",
+      "word_count": 580
+    },
+    {
+      "url": "https://example.com/page2",
+      "title": "数据结构与算法",
+      "content_length": 7830,
+      "text_length": 4500,
+      "links_count": 22,
+      "links": [
+        "https://example.com/algorithm1",
+        "https://example.com/datastructure1"
+      ],
+      "crawl_time": "2025-09-11T10:28:28.430466",
+      "word_count": 720
+    },
+    {
+      "url": "https://example.com/page3",
+      "title": "Web开发实践",
+      "content_length": 6200,
+      "text_length": 3800,
+      "links_count": 18,
+      "links": [
+        "https://example.com/web1",
+        "https://example.com/web2"
+      ],
+      "crawl_time": "2025-09-11T10:28:28.430467",
+      "word_count": 650
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Metric,Value
+Total Logs,100
+DEBUG Logs,19
+ERROR Logs,33
+WARNING Logs,10
+INFO Logs,25
+CRITICAL Logs,13

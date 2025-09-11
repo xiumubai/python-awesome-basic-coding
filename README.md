@@ -51,7 +51,7 @@
 ### 第八部分：模块和包
 - [27. 模块](./27-modules/README.md) - 模块基础概念、导入语句、搜索路径、__name__变量、模块重载和文档
 - [28. 包](./28-packages/README.md) - 包的创建和管理
-- [29. 标准库](./29-standard-library/README.md) - 常用标准库介绍
+- [29. 标准库](./29-standard-library/README.md) - 文件系统操作、数据格式处理、网络URL、日期时间、正则表达式、随机数、路径操作、数学统计、集合模块等常用标准库
 
 ### 第九部分：实践项目
 - [30. 小项目1](./30-project1/README.md) - 计算器程序
@@ -128,8 +128,8 @@
 - ✅ 25-decorators
 - ✅ 26-iterators
 - ✅ 27-modules
-- 28-packages
-- 29-standard-library
+- ✅ 28-packages
+- ✅ 29-standard-library
 - 30-mini-projects
 - 31-exercises
 - 32-challenges

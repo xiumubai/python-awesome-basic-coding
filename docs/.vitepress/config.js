@@ -99,6 +99,12 @@ export default defineConfig({
             { text: '📦 包管理', link: '/guide/28-packages/' },
           ]
         },
+        {
+          text: '10. 标准库',
+          items: [
+            { text: '📦 标准库', link: '/guide/29-standard-library/' },
+          ]
+        },
       ],
       '/guide/01-variables-and-types/': [
         {
@@ -790,7 +796,14 @@ export default defineConfig({
         }
       ],
       '/guide/27-modules/': [
-        {          text: '🧭 快速导航',          items: [            { text: '🏠 返回教程首页', link: '/guide/' },            { text: '⬅️ 上一模块: 迭代器', link: '/guide/26-iterators/' },            { text: '➡️ 下一模块: 包', link: '/guide/28-packages/' }          ]        },
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 迭代器', link: '/guide/26-iterators/' },
+            { text: '➡️ 下一模块: 包', link: '/guide/28-packages/' }
+          ]
+        },
         {
           text: '🚀 模块',
           items: [
@@ -812,7 +825,8 @@ export default defineConfig({
           text: '🧭 快速导航',
           items: [
             { text: '🏠 返回教程首页', link: '/guide/' },
-            { text: '⬅️ 上一模块: 模块', link: '/guide/27-modules/' }
+            { text: '⬅️ 上一模块: 模块', link: '/guide/27-modules/' },
+            { text: '➡️ 下一模块: 标准库', link: '/guide/29-standard-library/' }
           ]
         },
         {
@@ -827,6 +841,31 @@ export default defineConfig({
             { text: '⚙️ 包的初始化', link: '/guide/28-packages/06_package_initialization' },
             { text: '🌐 命名空间包', link: '/guide/28-packages/07_namespace_packages' },
             { text: '💪 综合练习', link: '/guide/28-packages/08_exercises' }
+          ]
+        }
+      ],
+      '/guide/29-standard-library/': [
+        {
+          text: '🧭 快速导航',
+          items: [
+            { text: '🏠 返回教程首页', link: '/guide/' },
+            { text: '⬅️ 上一模块: 包管理', link: '/guide/28-packages/' }
+          ]
+        },
+        {
+          text: '📚 标准库',
+          items: [
+            { text: '📖 模块概述', link: '/guide/29-standard-library/' },
+            { text: '🗂️ os和sys模块', link: '/guide/29-standard-library/01_os_sys_modules' },
+            { text: '⏰ 日期时间模块', link: '/guide/29-standard-library/02_datetime_module' },
+            { text: '🎲 随机数模块', link: '/guide/29-standard-library/03_random_module' },
+            { text: '📂 路径和文件操作', link: '/guide/29-standard-library/04_pathlib_shutil' },
+            { text: '📊 数据序列化', link: '/guide/29-standard-library/05_json_csv_pickle' },
+            { text: '🌐 网络请求', link: '/guide/29-standard-library/06_urllib_http' },
+            { text: '🔍 正则表达式', link: '/guide/29-standard-library/07_re_module' },
+            { text: '🧮 数学统计', link: '/guide/29-standard-library/08_math_statistics' },
+            { text: '🗃️ 集合模块', link: '/guide/29-standard-library/09_collections_module' },
+            { text: '💪 综合练习', link: '/guide/29-standard-library/10_exercises' }
           ]
         }
       ],

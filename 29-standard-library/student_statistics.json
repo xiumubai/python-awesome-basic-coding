@@ -1,0 +1,107 @@
+{
+  "total_students": 50,
+  "math": {
+    "mean": 81.18,
+    "median": 82.5,
+    "stdev": 12.835998486399768,
+    "min": 60,
+    "max": 100
+  },
+  "english": {
+    "mean": 78.92,
+    "median": 78.5,
+    "stdev": 10.839911137522657,
+    "min": 60,
+    "max": 100
+  },
+  "science": {
+    "mean": 78.56,
+    "median": 77.5,
+    "stdev": 10.85556379494508,
+    "min": 61,
+    "max": 100
+  },
+  "age_distribution": {
+    "19": 9,
+    "20": 8,
+    "18": 11,
+    "17": 12,
+    "16": 10
+  },
+  "grade_distribution": {
+    "B": 14,
+    "C": 17,
+    "A": 19
+  },
+  "top_students": [
+    {
+      "name": "Eve17",
+      "grade": "B",
+      "total_score": 292
+    },
+    {
+      "name": "Bob72",
+      "grade": "A",
+      "total_score": 266
+    },
+    {
+      "name": "David89",
+      "grade": "A",
+      "total_score": 264
+    },
+    {
+      "name": "Eve69",
+      "grade": "C",
+      "total_score": 260
+    },
+    {
+      "name": "Grace33",
+      "grade": "A",
+      "total_score": 259
+    }
+  ],
+  "bottom_students": [
+    {
+      "name": "Alice53",
+      "grade": "A",
+      "total_score": 213
+    },
+    {
+      "name": "Alice88",
+      "grade": "C",
+      "total_score": 211
+    },
+    {
+      "name": "Frank93",
+      "grade": "A",
+      "total_score": 209
+    },
+    {
+      "name": "Bob45",
+      "grade": "B",
+      "total_score": 206
+    },
+    {
+      "name": "Frank81",
+      "grade": "B",
+      "total_score": 206
+    }
+  ],
+  "grade_performance": {
+    "B": {
+      "count": 14,
+      "average": 235.5,
+      "median": 230.5
+    },
+    "C": {
+      "count": 17,
+      "average": 241.94117647058823,
+      "median": 247
+    },
+    "A": {
+      "count": 19,
+      "average": 238.05263157894737,
+      "median": 237
+    }
+  }
+}

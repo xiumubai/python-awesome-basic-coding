@@ -73,7 +73,7 @@ features:
 ### 📦 第八阶段：模块和库
 - [模块](/guide/27-modules/) - 学习模块基础概念、导入语句、搜索路径、__name__变量、模块重载和文档等代码组织技术
 - [包](/guide/28-packages/) - 大型项目结构
-- [标准库](/guide/29-standard-library/) - Python内置功能
+- [标准库](/guide/29-standard-library/) - 文件系统操作、数据格式处理、网络URL、日期时间、正则表达式、随机数、路径操作、数学统计、集合模块等Python内置功能
 
 ### 🎮 第九阶段：实践项目
 - [迷你项目](/guide/30-mini-projects/) - 综合应用练习

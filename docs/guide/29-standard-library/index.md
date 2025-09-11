@@ -40,7 +40,7 @@
 
 ## 代码文件说明
 
-### 01_os_sys_modules.py
+### [01_os_sys_modules.py](./01_os_sys_modules.md)
 **学习内容**：os和sys模块的基本使用
 - 环境变量的获取和设置
 - 文件和目录的基本操作
@@ -53,12 +53,7 @@
 - `sys.argv`命令行参数
 - `sys.path`模块搜索路径
 
-**运行方式**：
-```bash
-python3 01_os_sys_modules.py
-```
-
-### 02_datetime_module.py
+### [02_datetime_module.py](./02_datetime_module.md)
 **学习内容**：日期时间的创建、格式化和计算
 - datetime对象的创建和操作
 - 日期时间的格式化输出
@@ -71,12 +66,7 @@ python3 01_os_sys_modules.py
 - `timedelta`时间差计算
 - 时区感知的日期时间处理
 
-**运行方式**：
-```bash
-python3 02_datetime_module.py
-```
-
-### 03_random_module.py
+### [03_random_module.py](./03_random_module.md)
 **学习内容**：随机数生成和随机选择
 - 各种类型随机数的生成
 - 随机选择和随机排列
@@ -89,12 +79,7 @@ python3 02_datetime_module.py
 - `random.shuffle()`随机打乱
 - `random.seed()`种子设置
 
-**运行方式**：
-```bash
-python3 03_random_module.py
-```
-
-### 04_pathlib_shutil.py
+### [04_pathlib_shutil.py](./04_pathlib_shutil.md)
 **学习内容**：现代化的文件和目录操作
 - pathlib的面向对象路径操作
 - shutil的高级文件操作
@@ -107,12 +92,7 @@ python3 03_random_module.py
 - `shutil.copy()`和`shutil.move()`
 - `shutil.rmtree()`递归删除
 
-**运行方式**：
-```bash
-python3 04_pathlib_shutil.py
-```
-
-### 05_json_csv_pickle.py
+### [05_json_csv_pickle.py](./05_json_csv_pickle.md)
 **学习内容**：数据序列化和文件格式处理
 - JSON数据的读写
 - CSV文件的处理
@@ -125,12 +105,7 @@ python3 04_pathlib_shutil.py
 - `pickle.dump()`和`pickle.load()`
 - 数据格式的选择和转换
 
-**运行方式**：
-```bash
-python3 05_json_csv_pickle.py
-```
-
-### 06_urllib_http.py
+### [06_urllib_http.py](./06_urllib_http.md)
 **学习内容**：网络编程基础
 - HTTP请求的发送
 - URL的解析和构建
@@ -143,12 +118,7 @@ python3 05_json_csv_pickle.py
 - HTTP状态码处理
 - 异常处理和重试机制
 
-**运行方式**：
-```bash
-python3 06_urllib_http.py
-```
-
-### 07_re_module.py
+### [07_re_module.py](./07_re_module.md)
 **学习内容**：正则表达式的模式匹配
 - 正则表达式的基本语法
 - 文本的搜索和替换
@@ -161,12 +131,7 @@ python3 06_urllib_http.py
 - 分组`()`和命名分组`(?P<name>)`
 - `re.sub()`替换操作
 
-**运行方式**：
-```bash
-python3 07_re_module.py
-```
-
-### 08_math_statistics.py
+### [08_math_statistics.py](./08_math_statistics.md)
 **学习内容**：数学运算和统计分析
 - 基本数学函数的使用
 - 统计量的计算
@@ -179,12 +144,7 @@ python3 07_re_module.py
 - 数学常数`math.pi`、`math.e`
 - 统计分布的计算
 
-**运行方式**：
-```bash
-python3 08_math_statistics.py
-```
-
-### 09_collections_module.py
+### [09_collections_module.py](./09_collections_module.md)
 **学习内容**：专门的容器数据类型
 - Counter计数器的使用
 - defaultdict默认字典
@@ -197,12 +157,7 @@ python3 08_math_statistics.py
 - `collections.namedtuple`结构化数据
 - `collections.deque`高效的队列操作
 
-**运行方式**：
-```bash
-python3 09_collections_module.py
-```
-
-### 10_exercises.py
+### [10_exercises.py](./10_exercises.md)
 **学习内容**：标准库综合应用练习
 - 多个模块的组合使用
 - 实际问题的解决方案
@@ -214,11 +169,6 @@ python3 09_collections_module.py
 - 错误处理和异常管理
 - 代码的可读性和维护性
 - 性能优化技巧
-
-**运行方式**：
-```bash
-python3 10_exercises.py
-```
 
 ## 学习建议
 
